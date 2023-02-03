@@ -1,0 +1,10 @@
+/**
+ * 查看可以覆盖的默认主题 CSS 变量
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ *
+ * ---------------------------- */
+
+:root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+}
