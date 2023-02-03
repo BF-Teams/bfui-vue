@@ -17,6 +17,7 @@
       "path": "./tsconfig.vitest.json"
     }
   ],
+  // 以下为自定义配置
   "compilerOptions": {
     // "isolatedModules": true, // 应当设置为 true，因为 Vite 使用 esbuild 来转译 TypeScript，并受限于单文件转译的限制。因为此选项默认是 true，所以可以不用写
     "strict": true // 如果你正在使用选项式 API，请设置为 true，或者至少开启 noImplicitThis
