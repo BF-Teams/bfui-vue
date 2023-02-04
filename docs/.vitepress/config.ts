@@ -13,7 +13,7 @@ export default defineConfig({
   lastUpdated: true,
   // Theme related configurations.
   themeConfig: {
-    logo: './public/logo.png',
+    logo: '/logo.png',
     socialLinks: [{ icon: 'github', link: 'https://github.com/BF-Teams/bfui-vue' }],
     outline: [2, 3],
   },

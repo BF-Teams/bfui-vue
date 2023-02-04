@@ -2,4 +2,6 @@
 
 Here are some `BFUI` FAQs and official responses.
 
-在你[向社区提问](https://support.qq.com/products/417041/)或[创建新issue](https://github.com/BF-Ocean/bfui-vue3/issues)之前建议找找有没有类似的问题。
+Before you ask the [community](https://support.qq.com/products/417041/) a question, or create a new [issue](https://github.com/BF-Ocean/bfui-vue3/issues), it is recommended to find out if there are any similar issues.
+
+When create an issue, describe the problem in short language, and add the environment and repetition steps when the problem occurred.

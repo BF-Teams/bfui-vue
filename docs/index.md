@@ -3,8 +3,11 @@ layout: home
 
 hero:
   name: BFUI
-  text: 简洁大方的前端组件库
-  tagline: 适用于 Vue 3.x
+  text: 我们追求简单和优雅
+  tagline: 一款适用于 Vue 3.x 的前端 UI 组件库
+  image:
+    src: /logo.png
+    alt: BFUI
   actions:
     - theme: brand
       text: 开始使用
@@ -33,5 +36,3 @@ features:
     title: 开源共建
     details: 我们在开源社区，永远敞开双臂欢迎你的加入，无关于国籍或肤色
 ---
-
-

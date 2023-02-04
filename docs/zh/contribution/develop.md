@@ -1,21 +1,17 @@
----
-sidebarDepth: 1
----
-
 # 参与开发
 
 ## 项目技术栈
 
 如果想要**深度参与**本项目的开发，您可能需要了解以下技术栈：
 
-- 开发语言：`JS + Es6 + Less + Vue3 + Babel + TS`
+- 开发语言：`Less + JavaScript + Es6 + Vue3 + TypeScript`
 - 代码风格：`Prettier + Eslint + Stylelint`
 - 代码提交：`Husky + Lint-staged + Commitlint`
-- 打包工具：`Vite`
-- 文档构建：`VuePress2`
+- 打包编译：`Vite`
+- 文档构建：`VitePress`
 - 依赖管理：`pnpm`
 - 版本控制：`Git + GitHub`
-- 组件测试：`Jest`
+- 测试工具：`Vitest`(unit) + `Cypress`(e2e)
 
 当然，也同样欢迎技术水平不太高的同学对本项目做出贡献，因为我们的初始团队就是一群热爱开发的高校学生，目的就是在共建共享的开源生态中学习成长。欢迎向我们提交 [Issues](https://github.com/BF-Teams/bfui-vue3/issues) 来给出建议或反馈Bug，也欢迎大家提交你的贡献并创建 [Pull Request](https://github.com/BF-Teams/bfui-vue3/pulls)，或者其他任何形式的对本项目的参与和支持。
 
@@ -67,6 +63,7 @@ sidebarDepth: 1
 
 以下是本项目的大致目录结构：
 
+::: details 点击展开目录结构
 ```sh
 <root>
   ├─ docs/        # 项目文档目录
@@ -117,34 +114,38 @@ sidebarDepth: 1
   │
   └─ README.md    # 项目自述文件
 ```
+:::
 
 
 ## 代码规范
 
 - 在编写代码时，请注意保持风格统一：
+
   1. 使用 **Prettier** 进行代码格式化（VSCode快捷键 `Shift + Alt + F`）
   2. 确保代码可以通过仓库的 **Stylelint** 样式校验
   3. 确保代码可以通过仓库的 **ESLint** 校验
 
-- 在提交代码时，请注意规范书写 commit 信息，需按照 `<type>(<scope>): <subject>` 格式才能通过 **Commitlint** 校验，其中提交类型`<type>`有如下几种：
-  ```json
-  'build', // 改变构建流程、或者增加依赖库、工具等 如webpack.config.js,package.json yarn.lock
-  'chore', // 构建过程或辅助工具的变动，各种配置文件的修改，如.gitignore,tsconfig.json,.vscode,.tenone, eslint/stylelint,envConfig
-  'ci', // 对CI自动化流程配置文件或脚本进行了修改
-  'docs', // 只修改了项目说明文档
-  'feat', // 新增功能，一个新的特性
-  'fix', // 修复一个Bug
-  'perf', // 性能优化
-  'refactor', // 代码重构，既不是修复Bug(fix)也不是添加功能(feat)
-  'revert', // 版本回滚，代码回退
-  'test', // 修改或添加一个测试用例
-  'clean', // 清理过时无用文件
-  'merge', // 合并代码分支
-  'style', //  只修改了样式文件(包括css/less/sass,图片,字体文件)
-  'format', // 格式化,不影响代码含义的修改，比如空格、格式缩进、缺失的分号等
+- 在提交代码时，请规范书写 commit 信息，如`git commit -m "docs: update develop.md"`，需按照 `<type>(<scope>): <subject>` 格式才能通过 **Commitlint** 校验。
+
+  其中`<scope>`可以省略，提交类型`<type>`有如下几种：
+
+  ```js
+  'feat', // 新特性、需求，新增功能
+  'fix', // bug 修复
+  'docs', // 文档内容改动
+  'style', // 不影响代码含义的改动，例如去掉空格、改变缩进、增删分号
+  'refactor', // 代码重构，注意与 feat 和 fix 有区别，注意区分不要混淆
+  'test', // 添加测试或者修改现有测试
+  'chore', // 不修改 src 或者 test 的其余修改，例如构建过程或辅助工具的变动，各种配置文件的修改等
+  'merge', // 合并分支
+  'perf', // 性能优化，提高性能的改动
+  'revert', // 执行 git revert 打印的 message，版本回滚、代码回退
+  'build', // 构造工具的或者外部依赖的改动，例如 webpack、npm
+  'ci', // 与 CI（持续集成服务）有关的改动
   ```
 
 - 请注意 commit 内容不要写的很简单、很随意，但也不要很冗余。要使别人看到commit信息就可以获知该commit用意，让commit msg与你提交的的变更代码建立联系。在此发出倡议：
+
   1. **One Thing，One Commit.** 在提交 commit 的时候尽量保证这个 commit 只做一件事情，比如实现某个功能或者修改了配置文件。
   2. **不要commit一半的工作。** 当开发任务没有完整的完成的时候，不要commit。这不是说每次commit都需要开发完成一个非常完整的大功能，而是当把功能切分成许多小的但仍然具备完整性的功能点的时候，开发人员需要完整完成这个功能点之后才能commit。
   3. **经常commit。** 经常使用commit能够使你的commit（里的修改内容）越小，并且能使你commit相关的修改，多次commit允许你推送自己代码到远程分支上的频率增加，能有效的减少merge代码时出现的代码冲突问题，因为多次 commit能使开发团队其他人的代码库得到及时的更新。

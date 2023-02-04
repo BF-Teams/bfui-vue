@@ -1,13 +1,13 @@
-export type Sidebar = SidebarItem[] | SidebarMulti
+export type Sidebar = SidebarItem[] | SidebarMulti;
 
 export interface SidebarMulti {
-  [path: string]: SidebarItem[]
+  [path: string]: SidebarItem[];
 }
 
 export type SidebarItem = {
-  text?: string
-  link?: string
-  items?: SidebarItem[]
+  text?: string;
+  link?: string;
+  items?: SidebarItem[];
   /**
    * If not specified, group is not collapsible.
    *
@@ -15,20 +15,20 @@ export type SidebarItem = {
    *
    * If `false`, group is collapsible but expanded by default
    */
-  collapsed?: boolean
-}
+  collapsed?: boolean;
+};
 
 export const sidebarEn: SidebarMulti = {
   '/en/guide/': [
     {
       text: 'Start',
       items: [
-        { text: '项目简介', link: './index' },
-        { text: '安装方式', link: './installation' },
-        { text: '快速上手', link: './getting-started' },
-        { text: '国际化', link: './i18n' },
-        { text: '常见问题', link: './faq' },
-        { text: '更新日志', link: './changelog' },
+        { text: 'What is BFUI?', link: './index' },
+        { text: 'Installation', link: './installation' },
+        { text: 'Getting Started', link: './getting-started' },
+        { text: 'i18n', link: './i18n' },
+        { text: 'FAQ', link: './faq' },
+        { text: 'Changelog', link: './changelog' },
       ],
     },
   ],
@@ -51,6 +51,16 @@ export const sidebarEn: SidebarMulti = {
         { text: 'Data Display', collapsed: false },
         { text: 'Feedback', collapsed: false },
         { text: 'Other', collapsed: false },
+      ],
+    },
+  ],
+  '/en/contribution/': [
+    {
+      text: 'Contributing Guide',
+      items: [
+        { text: 'Team', link: './index' },
+        { text: 'Design', link: './design' },
+        { text: 'Develop', link: './develop' },
       ],
     },
   ],

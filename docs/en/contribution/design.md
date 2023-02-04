@@ -1,4 +1,4 @@
-# 组件设计
+# Component Design
 
 ## Values 价值观
 

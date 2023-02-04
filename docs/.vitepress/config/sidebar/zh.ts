@@ -23,7 +23,7 @@ export const sidebarZh: SidebarMulti = {
     {
       text: '开始',
       items: [
-        { text: '项目简介', link: './index' },
+        { text: '什么是 BFUI？', link: './index' },
         { text: '安装方式', link: './installation' },
         { text: '快速上手', link: './getting-started' },
         { text: '国际化', link: './i18n' },
@@ -55,8 +55,13 @@ export const sidebarZh: SidebarMulti = {
     },
   ],
   '/zh/contribution/': [
-    { text: '开发团队', link: './index' },
-    { text: '组件设计', link: './design' },
-    { text: '参与开发', link: './develop' },
+    {
+      text: '贡献指南',
+      items: [
+        { text: '开发团队', link: './index' },
+        { text: '组件设计', link: './design' },
+        { text: '参与开发', link: './develop' },
+      ],
+    },
   ],
 };
