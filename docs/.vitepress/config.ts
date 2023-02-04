@@ -8,7 +8,53 @@ export default defineConfig({
   // These are app level configs.
   base: '/bfui-vue/',
   title: 'BFUI',
-  head: [],
+  head: [
+    ['link', { rel: 'shortcut icon', href: '/images/icons/favicon.ico' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    [
+      'link',
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/images/icons/apple-touch-icon.png',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/images/icons/favicon-32x32.png',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/images/icons/favicon-16x16.png',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'mask-icon',
+        href: '/images/icons/safari-pinned-tab.svg',
+        color: '#0d3eed',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'msapplication-config',
+        content: '/images/icons/browserconfig.xml',
+      },
+    ],
+    ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+  ],
   appearance: true,
   lastUpdated: true,
   // Theme related configurations.

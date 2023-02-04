@@ -1,6 +1,8 @@
 ---
 layout: home
 
+title: BFUI
+titleTemplate: Simple and elegant Vue3 component library
 hero:
   name: BFUI
   text: We Pursue Simple and Alegant

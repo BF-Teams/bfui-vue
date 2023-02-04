@@ -1,6 +1,8 @@
 ---
 layout: home
 
+title: BFUI
+titleTemplate: 简单优雅的 Vue3 组件库
 hero:
   name: BFUI
   text: 我们追求简单和优雅
