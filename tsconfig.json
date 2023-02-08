@@ -20,8 +20,9 @@
   // 以下为自定义配置
   "compilerOptions": {
     // "isolatedModules": true, // 应当设置为 true，因为 Vite 使用 esbuild 来转译 TypeScript，并受限于单文件转译的限制。因为此选项默认是 true，所以可以不用写
-    "strict": true // 如果你正在使用选项式 API，请设置为 true，或者至少开启 noImplicitThis
+    "strict": true, // 如果你正在使用选项式 API，请设置为 true，或者至少开启 noImplicitThis
     // "noImplicitThis": true // 它是 strict 模式的一部分，才可以获得对组件选项中 this 的类型检查。否则 this 会被认为是 any
     // "paths": {} // 如果你在构建工具中配置了路径解析别名，例如 @/* 这个别名被默认配置在了 create-vue 项目中，你需要通过 paths 选项为 TypeScript 再配置一遍
+    // "types": ["vite/client"] // https://cn.vitejs.dev/guide/features.html#client-types
   }
 }

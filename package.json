@@ -1,6 +1,5 @@
 {
-  "name": "bfui-vue",
-  "version": "0.1.0",
+  "name": "root",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -22,6 +21,7 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@bf-teams/bfui-vue": "workspace:^0.1.0",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@rushstack/eslint-patch": "^1.1.4",

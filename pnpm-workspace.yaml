@@ -1,0 +1,2 @@
+packages:
+  - "packages/**" # 存放组件库等所有子包
