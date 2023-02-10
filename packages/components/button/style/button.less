@@ -1,0 +1,207 @@
+// :root {
+//   // 字体颜色
+//   --bf-text-color-primary: #303133; // 主要
+//   --bf-text-color-regular: #606266; // 常规
+//   --bf-text-color-secondary: #909399; // 次要
+//   --bf-text-color-placeholder: #a8abb2; // 占位
+//   --bf-text-color-disabled: #c0c4cc; // 禁用
+// }
+
+@bf-color-white: #ffffff;
+@bf-color-primary: #1677ff;
+@bf-color-primary-light: #4096ff;
+@bf-color-primary-dark: #0958d9;
+@bf-color-success: #67c23a;
+@bf-color-success-light: #82e252;
+@bf-color-success-dark: #52af23;
+@bf-color-warning: #e6a23c;
+@bf-color-warning-light: #ebb35f;
+@bf-color-warning-dark: #d68f23;
+@bf-color-danger: #f56c6c;
+@bf-color-danger-light: #f08a8a;
+@bf-color-danger-dark: #e24545;
+
+@bf-button-text-color: #606266;
+@bf-button-bg-color: #ffffff;
+@bf-button-border-color: #d9d9d9;
+
+.bf-button {
+  font-size: 14px;
+  line-height: 20px;
+  color: @bf-button-text-color;
+  background-color: @bf-button-bg-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @bf-button-border-color;
+  border-radius: 4px;
+  outline: none;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+
+// ---------- status 控制按钮颜色 ----------
+
+// 默认按钮
+.bf-button.bf-button-status-default:not(:disabled):hover {
+  background-color: rgb(0 0 0 / 6%);
+}
+.bf-button.bf-button-status-default:not(:disabled):active {
+  background-color: rgb(0 0 0 / 10%);
+}
+// 主要按钮
+.bf-button.bf-button-status-primary {
+  color: @bf-color-white;
+  background-color: @bf-color-primary;
+  border-color: @bf-color-primary;
+}
+.bf-button.bf-button-status-primary:not(:disabled):hover {
+  background-color: @bf-color-primary-light;
+}
+.bf-button.bf-button-status-primary:not(:disabled):active {
+  background-color: @bf-color-primary-dark;
+}
+// 成功按钮
+.bf-button.bf-button-status-success {
+  color: @bf-color-white;
+  background-color: @bf-color-success;
+  border-color: @bf-color-success;
+}
+.bf-button.bf-button-status-success:not(:disabled):hover {
+  background-color: @bf-color-success-light;
+}
+.bf-button.bf-button-status-success:not(:disabled):active {
+  background-color: @bf-color-success-dark;
+}
+// 警告按钮
+.bf-button.bf-button-status-warning {
+  color: @bf-color-white;
+  background-color: @bf-color-warning;
+  border-color: @bf-color-warning;
+}
+.bf-button.bf-button-status-warning:not(:disabled):hover {
+  background-color: @bf-color-warning-light;
+}
+.bf-button.bf-button-status-warning:not(:disabled):active {
+  background-color: @bf-color-warning-dark;
+}
+// 危险按钮
+.bf-button.bf-button-status-danger {
+  color: @bf-color-white;
+  background-color: @bf-color-danger;
+  border-color: @bf-color-danger;
+}
+.bf-button.bf-button-status-danger:not(:disabled):hover {
+  background-color: @bf-color-danger-light;
+}
+.bf-button.bf-button-status-danger:not(:disabled):active {
+  background-color: @bf-color-danger-dark;
+}
+
+
+// ---------- type 控制边框样式 ----------
+
+// 描边按钮
+.bf-button.bf-button-type-outline {
+  background-color: @bf-color-white;
+}
+.bf-button.bf-button-type-outline:not(:disabled):hover {
+  color: @bf-color-white;
+}
+.bf-button.bf-button-type-outline:not(:disabled):active {
+  color: @bf-color-white;
+}
+// 默认按钮 描边
+.bf-button.bf-button-status-default.bf-button-type-outline:not(:disabled):hover {
+  color: @bf-button-text-color;
+}
+.bf-button.bf-button-status-default.bf-button-type-outline:not(:disabled):active {
+  color: @bf-button-text-color;
+}
+// 主要按钮 描边
+.bf-button.bf-button-status-primary.bf-button-type-outline {
+  color: @bf-color-primary;
+  border-color: @bf-color-primary;
+}
+// 成功按钮 描边
+.bf-button.bf-button-status-success.bf-button-type-outline {
+  color: @bf-color-success;
+  border-color: @bf-color-success;
+}
+// 警告按钮 描边
+.bf-button.bf-button-status-warning.bf-button-type-outline {
+  color: @bf-color-warning;
+  border-color: @bf-color-warning;
+}
+// 危险按钮 描边
+.bf-button.bf-button-status-danger.bf-button-type-outline {
+  color: @bf-color-danger;
+  border-color: @bf-color-danger;
+}
+
+// 虚线按钮
+.bf-button.bf-button-type-dashed {
+  border-style: dashed;
+  background-color: @bf-color-white;
+}
+.bf-button.bf-button-type-dashed:not(:disabled):hover{
+  color: @bf-color-white;
+}
+.bf-button.bf-button-type-dashed:not(:disabled):active{
+  color: @bf-color-white;
+}
+// 默认按钮 虚线
+.bf-button.bf-button-status-default.bf-button-type-dashed:not(:disabled):hover {
+  color: @bf-button-text-color;
+}
+.bf-button.bf-button-status-default.bf-button-type-dashed:not(:disabled):active {
+  color: @bf-button-text-color;
+}
+// 主要按钮 虚线
+.bf-button.bf-button-status-primary.bf-button-type-dashed {
+  color: @bf-color-primary;
+  border-color: @bf-color-primary;
+}
+// 成功按钮 虚线
+.bf-button.bf-button-status-success.bf-button-type-dashed {
+  color: @bf-color-success;
+  border-color: @bf-color-success;
+}
+// 警告按钮 虚线
+.bf-button.bf-button-status-warning.bf-button-type-dashed {
+  color: @bf-color-warning;
+  border-color: @bf-color-warning;
+}
+// 危险按钮 虚线
+.bf-button.bf-button-status-danger.bf-button-type-dashed {
+  color: @bf-color-danger;
+  border-color: @bf-color-danger;
+}
+
+// 文字按钮
+.bf-button.bf-button-type-text {
+  border-color: transparent;
+  background-color: @bf-color-white;
+}
+.bf-button.bf-button-type-text:not(:disabled):hover {
+  background-color: rgb(0 0 0 / 6%);
+}
+.bf-button.bf-button-type-text:not(:disabled):active {
+  background-color: rgb(0 0 0 / 10%);
+}
+// 主要按钮 文字
+.bf-button.bf-button-status-primary.bf-button-type-text {
+  color: @bf-color-primary;
+}
+// 成功按钮 文字
+.bf-button.bf-button-status-success.bf-button-type-text {
+  color: @bf-color-success;
+}
+// 警告按钮 文字
+.bf-button.bf-button-status-warning.bf-button-type-text {
+  color: @bf-color-warning;
+}
+// 危险按钮 文字
+.bf-button.bf-button-status-danger.bf-button-type-text {
+  color: @bf-color-danger;
+}

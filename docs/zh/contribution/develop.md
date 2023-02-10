@@ -2,16 +2,21 @@
 
 ## 项目技术栈
 
-如果想要**深度参与**本项目的开发，您可能需要了解以下技术栈：
+如果想要**深度参与**本项目的开发，您可能需要了解以下内容：
 
-- 开发语言：`Less + JavaScript + Es6 + Vue3 + TypeScript`
+- 仓库管理模式：menorepo（[Pnpm Workspace](https://pnpm.io/zh/workspaces)）
+- 依赖管理：[pnpm](https://pnpm.io/zh/)
+- 视图驱动框架：[Vue 3](https://cn.vuejs.org/)
+- 脚手架工具：[create-vue](https://github.com/vuejs/create-vue)
+- 打包构建工具：[Vite](https://cn.vitejs.dev/)、[Rollup](https://rollupjs.org/)
+- IDE编辑器：[VS Code](https://code.visualstudio.com/)
+- 开发语言：[Less](https://lesscss.org/)、[JavaScript + Es6](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)、[TypeScript](https://www.typescriptlang.org/zh/)
 - 代码风格：`Prettier + Eslint + Stylelint`
+- 测试工具：[Vitest](https://vitest.dev/)（Unit）、[Cypress](https://www.cypress.io/)（E2E）
 - 代码提交：`Husky + Lint-staged + Commitlint`
-- 打包编译：`Vite`
-- 文档构建：`VitePress`
-- 依赖管理：`pnpm`
-- 版本控制：`Git + GitHub`
-- 测试工具：`Vitest`(unit) + `Cypress`(e2e)
+- 文档构建：[VitePress](https://vitepress.vuejs.org/)
+- 版本控制：[Git](https://git-scm.com/book/zh/v2)、[GitHub](https://github.com/)
+- CI/CD：[Github Actions](https://docs.github.com/zh/actions)
 
 当然，也同样欢迎技术水平不太高的同学对本项目做出贡献，因为我们的初始团队就是一群热爱开发的高校学生，目的就是在共建共享的开源生态中学习成长。欢迎向我们提交 [Issues](https://github.com/BF-Teams/bfui-vue3/issues) 来给出建议或反馈Bug，也欢迎大家提交你的贡献并创建 [Pull Request](https://github.com/BF-Teams/bfui-vue3/pulls)，或者其他任何形式的对本项目的参与和支持。
 

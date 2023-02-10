@@ -1,8 +1,8 @@
 import type { App } from 'vue';
-import Button from './src/button.vue';
+import BfButton from './src/button.vue';
 
-Button.install = (app: App) => {
-  app.component(Button.name, Button);
+BfButton.install = (app: App) => {
+  app.component(BfButton.name, BfButton);
 };
 
-export default Button;
+export default BfButton;
