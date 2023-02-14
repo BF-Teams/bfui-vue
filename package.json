@@ -12,9 +12,9 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prepare": "husky install",
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev docs --port 8592",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs --port 8592"
   },
   "dependencies": {
     "vue": "^3.2.45",

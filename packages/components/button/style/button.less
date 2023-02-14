@@ -39,6 +39,10 @@
   cursor: pointer;
 }
 
+.bf-button + .bf-button {
+  margin-left: 10px;
+}
+
 
 // ---------- status 控制按钮颜色 ----------
 
@@ -204,4 +208,12 @@
 // 危险按钮 文字
 .bf-button.bf-button-status-danger.bf-button-type-text {
   color: @bf-color-danger;
+}
+
+
+// ---------- round 控制是否圆角 ----------
+
+// 圆角按钮
+.bf-button.is-round {
+  border-radius: 20px;
 }

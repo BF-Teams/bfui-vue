@@ -13,8 +13,8 @@ interface NavItemWithChildren {
 }
 
 export const navbarZh: Array<NavItem> = [
-  { text: '指南', link: '/zh/guide/' },
-  { text: '组件', link: '/zh/components/' },
+  { text: '使用指南', link: '/zh/guide/' },
+  { text: '组件总览', link: '/zh/components/' },
   { text: '参与贡献', link: '/zh/contribution/' },
   {
     text: '相关链接',

@@ -9,14 +9,14 @@ export default defineConfig({
   base: '/bfui-vue/',
   title: 'BFUI',
   head: [
-    ['link', { rel: 'shortcut icon', href: '/images/icons/favicon.ico' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'shortcut icon', href: '/bfui-vue/images/icons/favicon.ico' }],
+    ['link', { rel: 'manifest', href: '/bfui-vue/manifest.json' }],
     [
       'link',
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/images/icons/apple-touch-icon.png',
+        href: '/bfui-vue/images/icons/apple-touch-icon.png',
       },
     ],
     [
@@ -25,7 +25,7 @@ export default defineConfig({
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/images/icons/favicon-32x32.png',
+        href: '/bfui-vue/images/icons/favicon-32x32.png',
       },
     ],
     [
@@ -34,14 +34,14 @@ export default defineConfig({
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/images/icons/favicon-16x16.png',
+        href: '/bfui-vue/images/icons/favicon-16x16.png',
       },
     ],
     [
       'link',
       {
         rel: 'mask-icon',
-        href: '/images/icons/safari-pinned-tab.svg',
+        href: '/bfui-vue/images/icons/safari-pinned-tab.svg',
         color: '#0d3eed',
       },
     ],
@@ -49,7 +49,7 @@ export default defineConfig({
       'meta',
       {
         name: 'msapplication-config',
-        content: '/images/icons/browserconfig.xml',
+        content: '/bfui-vue/images/icons/browserconfig.xml',
       },
     ],
     ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],

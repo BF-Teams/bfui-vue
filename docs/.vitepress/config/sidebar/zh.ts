@@ -35,14 +35,14 @@ export const sidebarZh: SidebarMulti = {
   '/zh/components/': [
     {
       text: '组件总览',
-      link: './index',
+      link: '/zh/components/index',
       items: [
         {
           text: '通用型',
           collapsed: false,
           items: [
-            { text: 'Button 按钮', link: './button' },
-            { text: 'Icon 图标', link: './icon' },
+            { text: 'Button 按钮', link: '/zh/components/button/index' },
+            { text: 'Icon 图标', link: '/zh/components/icon/index' },
           ],
         },
         { text: '布局型', collapsed: false },

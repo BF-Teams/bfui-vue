@@ -5,7 +5,7 @@
     `bf-button-status-${status}`,
     `bf-button-type-${type}`,
     {
-      'is-circle': circle,
+      'is-round': round,
       'is-disabled': disabled,
       'is-loading': loading,
       'is-ghost': ghost,
@@ -37,7 +37,7 @@ export default defineComponent({
       type: String,
       default: "default",
     },
-    circle: {
+    round: {
       type: Boolean,
       default: false,
     },
