@@ -6,12 +6,13 @@
 import Status from './status.vue'
 import Type from './type.vue'
 import Round from './round.vue'
+import Size from './size.vue'
 </script>
 
 
 ## 代码示例
 
-### 按钮状态
+### 按钮状态(status)
 
 使用 status 来定义按钮的状态，对应不同的按钮颜色。
 
@@ -32,7 +33,7 @@ import Round from './round.vue'
 :::
 
 
-### 按钮类型
+### 按钮类型(type)
 
 使用 type 来定义按钮的类型，对应不同的边框样式。
 
@@ -49,7 +50,7 @@ import Round from './round.vue'
 </div>
 
 
-### 按钮形状
+### 按钮形状(round)
 
 使用 round 来定义按钮的形状，设置按钮是否圆角。
 
@@ -62,6 +63,48 @@ import Round from './round.vue'
 :::
 
 </div>
+
+
+### 按钮尺寸(size)
+
+使用 size 来定义按钮的尺寸大小。
+
+支持 `small`、`default`、`large` 三种尺寸，默认为 `default`。
+
+<div class="demo-block">
+
+<Size />
+
+::: details 查看代码
+<<< @/zh/components/button/size.vue
+:::
+
+</div>
+
+
+### 禁用按钮(disable)
+
+使用 disable 来定义按钮是否被禁用。
+
+
+### 图标按钮(icon)
+
+使用 icon 来定义按钮的图标类型。
+
+
+### 加载按钮(loading)
+
+使用 loading 来定义按钮是否处于加载中。
+
+
+### 自定义颜色(color)
+
+使用 color 来自定义按钮的颜色。
+
+
+### 幽灵按钮(ghost)
+
+使用 ghost 来定义按钮是否为幽灵按钮。
 
 
 

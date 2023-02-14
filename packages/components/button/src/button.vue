@@ -4,6 +4,7 @@
     :class="[
     `bf-button-status-${status}`,
     `bf-button-type-${type}`,
+    `bf-button-size-${size}`,
     {
       'is-round': round,
       'is-disabled': disabled,

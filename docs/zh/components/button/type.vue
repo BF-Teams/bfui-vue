@@ -31,7 +31,7 @@ import { BfButton } from '@bf-teams/bfui-vue';
 </script>
 
 <style lang="less" scoped>
-.bf-button + .bf-button {
+.bf-button {
   margin-bottom: 10px;
 }
 </style>

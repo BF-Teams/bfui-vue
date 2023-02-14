@@ -2,7 +2,7 @@
     "name": "BFUI",
     "short_name": "BFUI",
     "description": "BFUI-vue3 Docs",
-    "start_url": "./",
+    "start_url": "/bfui-vue/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",

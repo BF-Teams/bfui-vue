@@ -86,7 +86,7 @@ export default defineConfig({
         },
         footer: {
           message: '根据MIT许可证发布',
-          copyright: 'Copyright © 2023-present <a href="https://github.com/BF-Teams/">BF-Teams</a>',
+          copyright: 'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
         },
       },
     },
@@ -112,7 +112,7 @@ export default defineConfig({
         },
         footer: {
           message: 'Released under the MIT License.',
-          copyright: 'Copyright © 2023-present <a href="https://github.com/BF-Teams/">BF-Teams</a>',
+          copyright: 'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
         },
       },
     },

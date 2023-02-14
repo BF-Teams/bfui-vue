@@ -4,7 +4,7 @@
 
 > 下方列出的组件中，可以点击跳转的是已经初步开发完成的组件，其余敬请期待。
 
-- `通用型组件`：[Button 按钮](./button)，Icon 图标等。
+- `通用型组件`：[Button 按钮](./button/index.md)，Icon 图标等。
 
 - `布局型组件`：Grid，Layout等。
 

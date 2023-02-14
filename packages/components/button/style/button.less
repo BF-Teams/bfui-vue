@@ -27,7 +27,7 @@
 
 .bf-button {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
   color: @bf-button-text-color;
   background-color: @bf-button-bg-color;
   border-width: 1px;
@@ -37,6 +37,8 @@
   outline: none;
   padding: 4px 16px;
   cursor: pointer;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 .bf-button + .bf-button {
@@ -216,4 +218,21 @@
 // 圆角按钮
 .bf-button.is-round {
   border-radius: 20px;
+}
+
+
+// ---------- round 控制是否圆角 ----------
+
+// 小按钮
+.bf-button.bf-button-size-small {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 4px 10px;
+}
+
+// 大按钮
+.bf-button.bf-button-size-large {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 4px 22px;
 }
