@@ -84,5 +84,5 @@ export default defineComponent({
 </script>
 
 <style lang="less" scoped>
-@import '../style/button.less';
+@import "../style/button.less";
 </style>

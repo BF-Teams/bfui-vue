@@ -7,6 +7,7 @@ import Status from './status.vue'
 import Type from './type.vue'
 import Round from './round.vue'
 import Size from './size.vue'
+import Disabled from './disabled.vue'
 </script>
 
 
@@ -82,9 +83,19 @@ import Size from './size.vue'
 </div>
 
 
-### 禁用按钮(disable)
+### 禁用按钮(disabled)
 
-使用 disable 来定义按钮是否被禁用。
+使用 disabled 来定义按钮是否被禁用。
+
+<div class="demo-block">
+
+<Disabled />
+
+::: details 查看代码
+<<< @/zh/components/button/disabled.vue
+:::
+
+</div>
 
 
 ### 图标按钮(icon)
@@ -121,9 +132,9 @@ import Size from './size.vue'
 | **type**    | 设置按钮类型（边框样式），<br />可选值为 `outline`、`dashed`、`text`，<br />分别表现为：描边按钮、虚线按钮、文字按钮                                     | String    | `default`      |
 | **round**  | 设置按钮形状（是否圆角）                                                                                                                                 | Boolean   | `false`        |
 | **size**    | 调节尺寸大小，<br />可选值为 `small`、`default`、`large`                                                                                                 | String    | `default`      |
-| **disable** | 是否为禁用状态                                                                                                                                           | Boolean   | `false`        |
+| **disabled** | 是否为禁用状态                                                                                                                                           | Boolean   | `false`        |
 | **icon**    | 设置按钮的图标                                                                                                                                           | String    | -              |
-| **loading** | 是否为加载中状态<br />(相当于 disable 属性 + icon 属性)                                                                                               | Boolean   | `false`        |
+| **loading** | 是否为加载中状态<br />(相当于 disabled 属性 + icon 属性)                                                                                               | Boolean   | `false`        |
 | **color**   | 自定义按钮颜色，<br />可选值参考 css 属性，支持颜色名称、十六进制值、rgb 代码，也支持传入`linear-gradient`渐变色等。<br />(此属性会覆盖住 status 属性) | String    | -              |
 | **ghost**   | 幽灵属性，使内容反色，背景透明，常用在有色背景上。                                                                                                       | Boolean   | `false`        |
 
