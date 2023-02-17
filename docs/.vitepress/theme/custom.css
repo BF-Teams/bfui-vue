@@ -38,7 +38,7 @@
 .dark .demo-block {
   border: 1px solid #666666;
   box-shadow: 0 2px 4px 0 rgb(126 126 126 / 60%);
-  background-color: #444444;
+  background-color: #202020;
 }
 .dark .demo-block:hover {
   box-shadow: 0 0 8px 0 rgba(57, 110, 255, 0.6);

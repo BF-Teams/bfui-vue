@@ -8,6 +8,7 @@ import Type from './type.vue'
 import Round from './round.vue'
 import Size from './size.vue'
 import Disabled from './disabled.vue'
+import Ghost from './ghost.vue'
 </script>
 
 
@@ -110,13 +111,23 @@ import Disabled from './disabled.vue'
 
 ### 自定义颜色(color)
 
-使用 color 来自定义按钮的颜色。
-
+使用 color 来自定义按钮的颜色，目前仅支持16进制颜色代码。
 
 ### 幽灵按钮(ghost)
 
 使用 ghost 来定义按钮是否为幽灵按钮。
 
+幽灵按钮与描边按钮相像，但是背景透明，常用于有色背景上。
+
+<div class="demo-block">
+
+<Ghost />
+
+::: details 查看代码
+<<< @/zh/components/button/ghost.vue
+:::
+
+</div>
 
 
 
