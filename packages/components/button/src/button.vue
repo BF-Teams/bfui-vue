@@ -15,7 +15,7 @@
     :disabled="disabled"
     @click="handleClick"
   >
-    <i v-if="icon" :class="icon"></i>
+    <Icon v-if="icon" :iconName="icon"></Icon>
     <!-- i和span之间要有间隙，如果没有span就没有间隙，所以做一下判断 -->
     <!-- $slots.default：可以得到使用的插槽 -->
     <span v-if="$slots.default">
@@ -25,7 +25,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent} from 'vue'
+import Icon from '../../icon';
 
 export default defineComponent({
   name: "BfButton",
@@ -79,7 +80,10 @@ export default defineComponent({
     return {
       handleClick
     }
-  }
+  },
+  components: {
+    Icon,
+  },
 });
 </script>
 
