@@ -1,15 +1,15 @@
 import type { App } from 'vue';
 import BfButton from './button';
-import BFIcon from './icon';
+import BfIcon from './icon';
 
-const components = [BfButton, BFIcon];
+const components = [BfButton, BfIcon];
 const install = (app: App) => {
   components.forEach((item) => {
     app.component(item.name, item);
   });
 };
 
-export { BfButton, BFIcon };
+export { BfButton, BfIcon };
 
 export default {
   install,

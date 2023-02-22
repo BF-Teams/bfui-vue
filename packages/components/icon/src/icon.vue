@@ -12,7 +12,7 @@ import "../../../../public/assets/iconfont"
 // import "at.alicdn.com/t/c/font_3903618_3yylxbsrixc.js"
 
 export default defineComponent({
-  name: "bficon",
+  name: "BfIcon",
   props: {
     iconName: {
       type: String,
@@ -20,7 +20,7 @@ export default defineComponent({
   },
   setup(props) {
     // props.type;
-    const {iconName} = props
+    const { iconName } = props
     const iconUse = computed(() => {
       console.log(iconName);
       return "#icon-" + iconName;
@@ -31,10 +31,8 @@ export default defineComponent({
   }
 
 })
-
-
-
 </script>
+
 <style type="text/css">
 /* @import url("http://at.alicdn.com/t/c/font_3903618_dkos6nu14bj.js"); */
 .icon {

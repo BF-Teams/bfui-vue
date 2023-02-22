@@ -34,20 +34,18 @@
     <bf-button icon="jiazaizhong" disabled>加载中</bf-button>
     <bf-button icon="no-full" disabled>禁止使用</bf-button>
 
-    
     <br /><br />
     <h1>图标测试</h1>
     <br />
-    <BFIcon iconName="jiazai"></BFIcon>
-    <BFIcon iconName="jiazai1"></BFIcon>
-    <BFIcon iconName="jiazaizhong"></BFIcon>
-    <BFIcon iconName="no-full"></BFIcon>
-    
+    <bf-icon iconName="jiazai" />
+    <bf-icon iconName="jiazai1" />
+    <bf-icon iconName="jiazaizhong" />
+    <bf-icon iconName="no-full" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { BfButton, BFIcon } from '@bf-teams/bfui-vue';
+import { BfButton, BfIcon } from '@bf-teams/bfui-vue';
 // import '@bf-teams/bfui-vue';
 
 function fn() {
