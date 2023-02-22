@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import { BfButton, BfIcon } from '@bf-teams/bfui-vue';
+// import { BfButton, BfIcon } from '@bf-teams/bfui-vue';
 // import '@bf-teams/bfui-vue';
 
 function fn() {
