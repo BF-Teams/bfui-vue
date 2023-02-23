@@ -7,8 +7,8 @@
 
 <script lang="ts">
 
-import { defineComponent, computed, toRefs } from 'vue';
-import "../../../../public/assets/iconfont"
+import { defineComponent, computed } from 'vue';
+import "public/assets/iconfont.js"
 // import "at.alicdn.com/t/c/font_3903618_3yylxbsrixc.js"
 
 export default defineComponent({

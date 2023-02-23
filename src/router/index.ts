@@ -22,6 +22,12 @@ const router = createRouter({
       name: 'play',
       component: () => import('../views/PlayView.vue'),
     },
+    {
+      path: '/play2',
+      name: 'play2',
+      component: () => import('../views/Selector.vue'),
+    },
+
   ],
 });
 
