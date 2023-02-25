@@ -8,7 +8,7 @@ import Size from './size.vue'
 
 ## 代码示例
 
-### 选择器尺寸(name)
+### 选择器尺寸(size)
 
 使用 size 来定义选择器尺寸，支持 `default`、`small` 和 `mini`。
 

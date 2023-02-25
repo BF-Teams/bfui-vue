@@ -239,25 +239,10 @@ pnpm docs:dev
 
 :::
 
-### 2. Pull Request 流程
+### 3. Pull Request 流程
 
 - **Fork** 主仓库，如果已经 fork 过，请**同步主仓库的最新代码**。
 - 基于 fork 后仓库的 main 分支**新建一个分支**，比如 feature/button_color。
 - 在**新分支**上进行**开发**，开发完成后，提 **Pull Request** 到主仓库的 **main 分支**。
 - Pull Request 会在 Review 通过后被合并到主仓库。
 - 等待 BFUI 发布新版本，一般是积攒到足够数量的代码更改后。
-
-### 3. 同步最新代码
-
-提 Pull Request 前，请依照下面的流程同步主仓库的最新代码：
-
-```sh:no-line-numbers
-# 拉取主仓库最新代码
-git fetch upstream
-
-# 切换至 main 分支
-git checkout main
-
-# 合并主仓库代码
-git merge upstream/main
-```
