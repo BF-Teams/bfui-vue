@@ -218,7 +218,8 @@ pnpm docs:dev
 
 - 把功能分支 `feat/button-color` 发布到自己 GitHub 账户的仓库中
   ```sh
-  git push origin feat/button-color
+  # 首次推送某分支需要 -u 参数
+  git push -u origin feat/button-color
   ```
 
 ### 2. 提出 Pull Request

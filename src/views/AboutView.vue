@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>请为每个组件创建一个测试页面，并添加到首页和路由中</h1>
   </div>
 </template>
 

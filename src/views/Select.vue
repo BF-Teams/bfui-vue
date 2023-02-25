@@ -1,28 +1,36 @@
 <template>
   <div>
-    <bf-selector
-      v-model="selVal1"
-      placeholder="默认大小"
-      :options="selOptions"
-    >
-    </bf-selector>
-    <bf-selector
+    <h2>Select组件运行测试</h2>
+    <br />
+
+    <bf-select v-model="selVal1" placeholder="默认大小" :options="selOptions">
+    </bf-select>
+    <bf-select
       v-model="selVal1"
       placeholder="小一点的"
       :options="selOptions"
       size="small"
-    ></bf-selector>
-    <bf-selector
+    ></bf-select>
+    <bf-select
       v-model="selVal1"
       placeholder="mini型的"
       :options="selOptions"
       size="mini"
-    ></bf-selector>
+    ></bf-select>
   </div>
 </template>
 
+<script lang="ts">
+import { BfSelect } from '@bf-teams/bfui-vue';
 
-<script setup>
+export default {
+  components: {
+    BfSelect
+  }
+}
+</script>
+
+<script setup lang="ts">
 import { reactive, ref } from "vue";
 const selVal1 = ref("");
 const state = reactive({
@@ -37,14 +45,4 @@ const state = reactive({
 const { selOptions } = state;
 </script>
 
-<script>
-import { BfSelector } from '@bf-teams/bfui-vue';
-export default {
-  name: "selector",
-  components: {BfSelector}
-}
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

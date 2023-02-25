@@ -1,6 +1,7 @@
 <template>
   <div class="play">
-    <h1>组件运行测试</h1>
+    <h2>Button组件运行测试</h2>
+    <br />
 
     <bf-button>默认按钮</bf-button>
     <bf-button status="primary">主要按钮</bf-button>
@@ -35,7 +36,8 @@
     <bf-button icon="loading" disabled>禁止使用</bf-button>
 
     <br /><br />
-    <h1>图标测试</h1>
+
+    <h2>Icon组件运行测试</h2>
     <br />
     <bf-icon name="setting" />
     <bf-icon name="experiment" />

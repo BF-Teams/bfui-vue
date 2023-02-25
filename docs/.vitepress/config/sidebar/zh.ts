@@ -47,7 +47,13 @@ export const sidebarZh: SidebarMulti = {
         },
         { text: '布局型', collapsed: false },
         { text: '导航型', collapsed: false },
-        { text: '数据录入型', collapsed: false },
+        {
+          text: '数据录入型',
+          collapsed: false,
+          items: [
+            { text: 'Select 选择器', link: '/zh/components/select/index' },
+          ],
+        },
         { text: '数据展示型', collapsed: false },
         { text: '反馈型', collapsed: false },
         { text: '其他组件', collapsed: false },

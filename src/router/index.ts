@@ -18,16 +18,20 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
-      path: '/play',
-      name: 'play',
-      component: () => import('../views/PlayView.vue'),
+      path: '/button',
+      name: 'button',
+      component: () => import('../views/Button.vue'),
     },
     {
-      path: '/play2',
-      name: 'play2',
-      component: () => import('../views/Selector.vue'),
+      path: '/icon',
+      name: 'icon',
+      component: () => import('../views/Icon.vue'),
     },
-
+    {
+      path: '/select',
+      name: 'select',
+      component: () => import('../views/Select.vue'),
+    },
   ],
 });
 
