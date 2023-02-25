@@ -22,7 +22,7 @@ import Name from './name.vue'
 
 </div>
 
-:::tip
+::: tip
 图标库正在完善挑选中，稍后公布所收录的常用图标名称
 :::
 

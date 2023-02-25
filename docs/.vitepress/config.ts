@@ -54,6 +54,7 @@ export default defineConfig({
     ],
     ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
+    ['script', { type: 'text/javascript', src: '/bfui-vue/js/iconfont.js' }],
   ],
   appearance: true,
   lastUpdated: true,

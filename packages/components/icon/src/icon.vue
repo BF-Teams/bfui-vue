@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import "./iconfont"
+// import "./iconfont"
 
 export default defineComponent({
   name: "BfIcon",
