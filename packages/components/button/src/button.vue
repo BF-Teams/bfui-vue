@@ -15,7 +15,7 @@
     :disabled="disabled"
     @click="handleClick"
   >
-    <bf-icon v-if="icon" :iconName="icon" />
+    <bf-icon v-if="icon" :name="icon" />
     <!-- i和span之间要有间隙，如果没有span就没有间隙，所以做一下判断 -->
     <!-- $slots.default：可以得到使用的插槽 -->
     <span v-if="$slots.default">
@@ -76,7 +76,7 @@ export default defineComponent({
     props.type // <-- 类型：string
     emit('click') // <-- 类型检查 / 自动补全
 
-    const handleClick = function (e: Event) {
+    const handleClick = function (e: MouseEvent) {
       this.$emit("click", e);
     }
 

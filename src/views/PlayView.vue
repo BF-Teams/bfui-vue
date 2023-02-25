@@ -31,16 +31,16 @@
     <br /><br />
 
     <bf-button @click="fn">默认按钮</bf-button>
-    <bf-button icon="jiazaizhong" disabled>加载中</bf-button>
-    <bf-button icon="no-full" disabled>禁止使用</bf-button>
+    <bf-button icon="setting" disabled>加载中</bf-button>
+    <bf-button icon="loading" disabled>禁止使用</bf-button>
 
     <br /><br />
     <h1>图标测试</h1>
     <br />
-    <bf-icon iconName="jiazai" />
-    <bf-icon iconName="jiazai1" />
-    <bf-icon iconName="jiazaizhong" />
-    <bf-icon iconName="no-full" />
+    <bf-icon name="setting" />
+    <bf-icon name="experiment" />
+    <bf-icon name="bell" />
+    <bf-icon name="loading" />
   </div>
 </template>
 

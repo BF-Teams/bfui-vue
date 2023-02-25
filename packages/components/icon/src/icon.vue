@@ -1,45 +1,31 @@
 <template>
-  <svg class="icon" aria-hidden="true">
-    <use :xlink:href="iconUse"></use>
+  <svg class="bf-icon" :class="{'is-spin': spin,}" aria-hidden="true">
+    <use :xlink:href="'#icon-' + name"></use>
   </svg>
-  <slot></slot>
 </template>
 
 <script lang="ts">
-
-import { defineComponent, computed } from 'vue';
-import "public/assets/iconfont.js"
-// import "at.alicdn.com/t/c/font_3903618_3yylxbsrixc.js"
+import { defineComponent } from 'vue';
+import "./iconfont"
 
 export default defineComponent({
   name: "BfIcon",
   props: {
-    iconName: {
+    name: {
       type: String,
+      default: '',
     },
-  },
-  setup(props) {
-    // props.type;
-    const { iconName } = props
-    const iconUse = computed(() => {
-      console.log(iconName);
-      return "#icon-" + iconName;
-    })
-    return {
-      iconUse
+    spin: {
+      type: Boolean,
+      defaute: false,
     }
+  },
+  setup() {
   }
 
 })
 </script>
 
-<style type="text/css">
-/* @import url("http://at.alicdn.com/t/c/font_3903618_dkos6nu14bj.js"); */
-.icon {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-}
+<style lang="less" scoped>
+@import "../style/icon.less";
 </style>
