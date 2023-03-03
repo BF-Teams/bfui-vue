@@ -8,6 +8,7 @@ import Type from './type.vue'
 import Round from './round.vue'
 import Size from './size.vue'
 import Disabled from './disabled.vue'
+import Icon from './icon.vue'
 import Ghost from './ghost.vue'
 </script>
 
@@ -101,8 +102,19 @@ import Ghost from './ghost.vue'
 
 ### 图标按钮(icon)
 
-使用 icon 来定义按钮的图标类型。
+可以使用 Button 组件的 icon 属性来定义图标，也可以直接在 Button 内放置 Icon 组件。
 
+对于纯图标按钮，两种方法的效果相同，唯一区别是后者需要确保引入 Icon 组件。
+
+<div class="demo-block">
+
+<Icon />
+
+::: details 查看代码
+<<< @/zh/components/button/icon.vue
+:::
+
+</div>
 
 ### 加载按钮(loading)
 

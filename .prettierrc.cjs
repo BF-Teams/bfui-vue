@@ -1,5 +1,5 @@
 module.exports = {
-  printWidth: 80, // 一行最多 120 字符
+  printWidth: 100, // 一行最多 120 字符
   tabWidth: 2, // 使用 2 个空格缩进
   useTabs: false, // 不使用缩进符，而使用空格
   semi: true, // 行尾需要有分号

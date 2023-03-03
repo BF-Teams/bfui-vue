@@ -1,0 +1,41 @@
+.bf-dialog_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .bf-dialog {
+    background-color: var(--bf-color-blank);
+    border-radius: 20px;
+    width: 500px;
+    // height: 200px;
+
+    .bf-dialog_header {
+      // background-color: rgba(0, 255, 255, 0.363);
+      height: 50px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      box-sizing: border-box;
+      .bf-dialog_title {
+        color: var(--bf-text-color-primary);
+      }
+    }
+
+    .bf-dialog_body {
+      min-height: 100px;
+    }
+
+    .bf-dialog_footer {
+      padding: 16px 20px;
+      text-align: right;
+    }
+  }
+}

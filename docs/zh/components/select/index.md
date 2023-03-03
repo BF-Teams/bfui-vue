@@ -28,6 +28,8 @@ import Size from './size.vue'
 
 ## API
 
+### Select Props
+
 | 属性 Props     | 说明                      | 类型 Type | 默认值 Default |
 | -------------- | ------------------------- | --------- | -------------- |
 | **size**       | 选择器尺寸                | String    | `default`      |

@@ -55,7 +55,13 @@ export const sidebarZh: SidebarMulti = {
           ],
         },
         { text: '数据展示型', collapsed: false },
-        { text: '反馈型', collapsed: false },
+        {
+          text: '反馈型',
+          collapsed: false,
+          items: [
+            { text: 'Dialog 对话框', link: '/zh/components/dialog/index' },
+          ],
+        },
         { text: '其他组件', collapsed: false },
       ],
     },

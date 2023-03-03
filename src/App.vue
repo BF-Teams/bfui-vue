@@ -23,8 +23,9 @@ import HelloWorld from "./components/HelloWorld.vue";
 
       <nav>
         <RouterLink to="/button">Button</RouterLink>
-        <RouterLink to="/Icon">Icon</RouterLink>
+        <RouterLink to="/icon">Icon</RouterLink>
         <RouterLink to="/select">Select</RouterLink>
+        <RouterLink to="/dialog">Dialog</RouterLink>
       </nav>
     </div>
   </header>

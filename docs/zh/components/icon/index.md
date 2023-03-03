@@ -32,6 +32,8 @@ import Name from './name.vue'
 
 ## API
 
+### Icon Props
+
 | 属性 Props | 说明       | 类型 Type | 默认值 Default |
 | ---------- | ---------- | --------- | -------------- |
 | **name**   | 图标名称   | String    | -              |

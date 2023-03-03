@@ -13,4 +13,4 @@ BFUI 是一个基于 Vue3 的前端组件库，用于构建丰富的交互式用
 
 ## License
 
-本项目采用 [Apache-2.0](https://github.com/BF-Teams/bfui-vue3/blob/main/LICENSE) 开源协议
+本项目采用 MIT 开源许可证

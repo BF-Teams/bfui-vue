@@ -29,7 +29,7 @@
 .demo-block {
   border: 1px solid #ebebeb;
   border-radius: 10px;
-  padding: 15px 10px 0px;
+  padding: 15px 15px 0px;
   box-shadow: 0 2px 4px 0 rgb(232 237 250 / 60%);
 }
 .demo-block:hover {

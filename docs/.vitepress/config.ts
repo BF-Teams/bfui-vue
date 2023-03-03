@@ -3,59 +3,13 @@ import { defineConfig } from 'vitepress';
 // 引入导航栏和侧边栏配置
 import { navbarZh, navbarEn } from './config/navbar';
 import { sidebarZh, sidebarEn } from './config/sidebar';
+import { headConfig } from './config/head';
 
 export default defineConfig({
   // These are app level configs.
   base: '/bfui-vue/',
   title: 'BFUI',
-  head: [
-    ['link', { rel: 'shortcut icon', href: '/bfui-vue/images/icons/favicon.ico' }],
-    ['link', { rel: 'manifest', href: '/bfui-vue/manifest.json' }],
-    [
-      'link',
-      {
-        rel: 'apple-touch-icon',
-        sizes: '180x180',
-        href: '/bfui-vue/images/icons/apple-touch-icon.png',
-      },
-    ],
-    [
-      'link',
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: '/bfui-vue/images/icons/favicon-32x32.png',
-      },
-    ],
-    [
-      'link',
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/bfui-vue/images/icons/favicon-16x16.png',
-      },
-    ],
-    [
-      'link',
-      {
-        rel: 'mask-icon',
-        href: '/bfui-vue/images/icons/safari-pinned-tab.svg',
-        color: '#0d3eed',
-      },
-    ],
-    [
-      'meta',
-      {
-        name: 'msapplication-config',
-        content: '/bfui-vue/images/icons/browserconfig.xml',
-      },
-    ],
-    ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],
-    ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['script', { type: 'text/javascript', src: '/bfui-vue/js/iconfont.js' }],
-  ],
+  head: headConfig,
   appearance: true,
   lastUpdated: true,
   // Theme related configurations.
@@ -87,7 +41,8 @@ export default defineConfig({
         },
         footer: {
           message: '根据MIT许可证发布',
-          copyright: 'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
+          copyright:
+            'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
         },
       },
     },
@@ -113,7 +68,8 @@ export default defineConfig({
         },
         footer: {
           message: 'Released under the MIT License.',
-          copyright: 'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
+          copyright:
+            'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
         },
       },
     },

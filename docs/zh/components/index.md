@@ -10,10 +10,10 @@
 
 - `导航型组件`：Breadcrumb 面包屑，Dropdown 下拉菜单，Menu 菜单等。
 
-- `数据录入型`：Form 表单，Switch 开关，Upload 文件上传，日期选择器，[Select选择器](./select/index.md)等。
+- `数据录入型`：Form 表单，Switch 开关，Upload 文件上传，日期选择器，[Select 选择器](./select/index.md)等。
 
 - `数据展示型`：Avator 头像，Table 表格，List 列表等。
 
-- `反馈型组件`：Progress 进度条，Drawer 抽屉，Modal 对话框等。
+- `反馈型组件`：Progress 进度条，Drawer 抽屉，[Dialog 对话框](./dialog/index.md)等。
 
-- `其他组件`：Progress，Drawer 抽屉，Modal 对话框等。
+- `其他组件`：Progress，Drawer 抽屉等。

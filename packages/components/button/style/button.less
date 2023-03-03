@@ -14,6 +14,10 @@
   vertical-align: middle;
   white-space: nowrap;
   transition: .1s;
+
+  .bf-button_icon + .bf-button_text {
+    margin-left: 5px;
+  }
 }
 
 .bf-button + .bf-button {
@@ -32,7 +36,7 @@
 }
 // 主要按钮
 .bf-button.bf-button-status-primary {
-  color: var(--bf-color-white);
+  color: var(--bf-color-blank);
   background-color: var(--bf-color-primary);
   border-color: var(--bf-color-primary);
 }
@@ -44,7 +48,7 @@
 }
 // 成功按钮
 .bf-button.bf-button-status-success {
-  color: var(--bf-color-white);
+  color: var(--bf-color-blank);
   background-color: var(--bf-color-success);
   border-color: var(--bf-color-success);
 }
@@ -56,7 +60,7 @@
 }
 // 警告按钮
 .bf-button.bf-button-status-warning {
-  color: var(--bf-color-white);
+  color: var(--bf-color-blank);
   background-color: var(--bf-color-warning);
   border-color: var(--bf-color-warning);
 }
@@ -68,7 +72,7 @@
 }
 // 危险按钮
 .bf-button.bf-button-status-danger {
-  color: var(--bf-color-white);
+  color: var(--bf-color-blank);
   background-color: var(--bf-color-danger);
   border-color: var(--bf-color-danger);
 }
@@ -88,7 +92,7 @@
 }
 .bf-button.bf-button-type-outline:not(:disabled):hover,
 .bf-button.bf-button-type-outline:not(:disabled):active  {
-  color: var(--bf-color-white);
+  color: var(--bf-color-blank);
 }
 // 默认按钮 描边
 .bf-button.bf-button-status-default.bf-button-type-outline:not(:disabled):hover,
@@ -127,7 +131,7 @@
 }
 .bf-button.bf-button-type-dashed:not(:disabled):hover,
 .bf-button.bf-button-type-dashed:not(:disabled):active {
-  color: var(--bf-color-white);
+  color: var(--bf-color-blank);
 }
 // 默认按钮 虚线
 .bf-button.bf-button-status-default.bf-button-type-dashed:not(:disabled):hover,

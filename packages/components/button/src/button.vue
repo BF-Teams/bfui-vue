@@ -15,10 +15,9 @@
     :disabled="disabled"
     @click="handleClick"
   >
-    <bf-icon v-if="icon" :name="icon" />
-    <!-- i和span之间要有间隙，如果没有span就没有间隙，所以做一下判断 -->
+    <bf-icon class="bf-button_icon" v-if="icon" :name="icon" />
     <!-- $slots.default：可以得到使用的插槽 -->
-    <span v-if="$slots.default">
+    <span class="bf-button_text" v-if="$slots.default">
       <slot></slot>
     </span>
   </button>

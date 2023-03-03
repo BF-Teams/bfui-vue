@@ -13,4 +13,4 @@ It is recommended to browse the Chinese documents, the English translation is cu
 
 ## License
 
-Ths project is [Apache-2.0 license](https://github.com/BF-Teams/bfui-vue3/blob/main/LICENSE).
+This project is licensed under the MIT open source license.
