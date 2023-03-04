@@ -1,17 +1,17 @@
 :root.dark {
   --bf-color-blank: #ffffff;
   --bf-color-primary: #1677ff;
-  --bf-color-primary-light: #4096ff;
-  --bf-color-primary-dark: #0958d9;
+  --bf-color-primary-hover: #4096ff;
+  --bf-color-primary-active: #0958d9;
   --bf-color-success: #67c23a;
-  --bf-color-success-light: #82e252;
-  --bf-color-success-dark: #52af23;
+  --bf-color-success-hover: #82e252;
+  --bf-color-success-active: #52af23;
   --bf-color-warning: #e6a23c;
-  --bf-color-warning-light: #ebb35f;
-  --bf-color-warning-dark: #d68f23;
+  --bf-color-warning-hover: #ebb35f;
+  --bf-color-warning-active: #d68f23;
   --bf-color-danger: #f56c6c;
-  --bf-color-danger-light: #f08a8a;
-  --bf-color-danger-dark: #e24545;
+  --bf-color-danger-hover: #f08a8a;
+  --bf-color-danger-active: #e24545;
 
   --bf-text-color-primary: #303133;
   --bf-text-color-regular: #606266;

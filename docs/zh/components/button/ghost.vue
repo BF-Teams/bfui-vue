@@ -17,6 +17,12 @@
     <bf-button status="success" type="dashed" ghost>幽灵按钮</bf-button>
     <bf-button status="warning" type="dashed" ghost>幽灵按钮</bf-button>
     <bf-button status="danger" type="dashed" ghost>幽灵按钮</bf-button>
+    <br />
+    <bf-button type="text" ghost>幽灵按钮</bf-button>
+    <bf-button status="primary" type="text" ghost>幽灵按钮</bf-button>
+    <bf-button status="success" type="text" ghost>幽灵按钮</bf-button>
+    <bf-button status="warning" type="text" ghost>幽灵按钮</bf-button>
+    <bf-button status="danger" type="text" ghost>幽灵按钮</bf-button>
   </div>
 </template>
 

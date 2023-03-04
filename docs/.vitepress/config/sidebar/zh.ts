@@ -23,26 +23,26 @@ export const sidebarZh: SidebarMulti = {
     {
       text: '开始',
       items: [
-        { text: '什么是 BFUI？', link: './index' },
-        { text: '安装方式', link: './installation' },
-        { text: '快速上手', link: './getting-started' },
-        { text: '国际化', link: './i18n' },
-        { text: '常见问题', link: './faq' },
-        { text: '更新日志', link: './changelog' },
+        { text: '项目简介', link: '/zh/guide/' },
+        { text: '安装方式', link: '/zh/guide/installation' },
+        { text: '快速上手', link: '/zh/guide/getting-started' },
+        { text: '国际化', link: '/zh/guide/i18n' },
+        { text: '常见问题', link: '/zh/guide/faq' },
+        { text: '更新日志', link: '/zh/guide/changelog' },
       ],
     },
   ],
   '/zh/components/': [
     {
       text: '组件总览',
-      link: '/zh/components/index',
+      link: '/zh/components/',
       items: [
         {
           text: '通用型',
           collapsed: false,
           items: [
-            { text: 'Button 按钮', link: '/zh/components/button/index' },
-            { text: 'Icon 图标', link: '/zh/components/icon/index' },
+            { text: 'Button 按钮', link: '/zh/components/button/' },
+            { text: 'Icon 图标', link: '/zh/components/icon/' },
           ],
         },
         { text: '布局型', collapsed: false },
@@ -50,17 +50,13 @@ export const sidebarZh: SidebarMulti = {
         {
           text: '数据录入型',
           collapsed: false,
-          items: [
-            { text: 'Select 选择器', link: '/zh/components/select/index' },
-          ],
+          items: [{ text: 'Select 选择器', link: '/zh/components/select/' }],
         },
         { text: '数据展示型', collapsed: false },
         {
           text: '反馈型',
           collapsed: false,
-          items: [
-            { text: 'Dialog 对话框', link: '/zh/components/dialog/index' },
-          ],
+          items: [{ text: 'Dialog 对话框', link: '/zh/components/dialog/' }],
         },
         { text: '其他组件', collapsed: false },
       ],
@@ -69,10 +65,30 @@ export const sidebarZh: SidebarMulti = {
   '/zh/contribution/': [
     {
       text: '贡献指南',
+      link: '/zh/contribution/',
       items: [
-        { text: '开发团队', link: './index' },
-        { text: '组件设计', link: './design' },
-        { text: '参与开发', link: './develop' },
+        {
+          text: '组件设计',
+          collapsed: false,
+          items: [
+            { text: 'Values 价值观', link: '/zh/contribution/design/values/' },
+            { text: 'Color 色彩', link: '/zh/contribution/design/color/' },
+            { text: 'Fonts 字体', link: '/zh/contribution/design/fonts/' },
+            { text: 'Layout 布局', link: '/zh/contribution/design/layout/' },
+            { text: 'Motion 动效', link: '/zh/contribution/design/motion/' },
+          ],
+        },
+        {
+          text: '组件开发',
+          collapsed: false,
+          items: [
+            { text: '参与开发', link: '/zh/contribution/develop/' },
+          ],
+        },
+        {
+          text: '团队成员',
+          link: '/zh/contribution/team/',
+        },
       ],
     },
   ],

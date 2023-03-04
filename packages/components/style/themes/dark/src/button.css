@@ -4,10 +4,10 @@
   --bf-button-bg-color: transparent;
   --bf-button-bg-color-hover: rgba(255, 255, 255, 0.1);
   --bf-button-bg-color-active: rgb(0 0 0 / 8%);
-  --bf-button-bg-color-status-primary-type-outline: #18222c;
-  --bf-button-bg-color-status-success-type-outline: #1c2518;
-  --bf-button-bg-color-status-warning-type-outline: #292218;
-  --bf-button-bg-color-status-danger-type-outline: #2b1d1d;
+  --bf-button-bg-color-status-primary: #18222c;
+  --bf-button-bg-color-status-success: #1c2518;
+  --bf-button-bg-color-status-warning: #292218;
+  --bf-button-bg-color-status-danger: #2b1d1d;
   --bf-button-bg-color-disabled: rgb(0 0 0 / 4%);
   --bf-button-border-color: #58585B;
 }

@@ -4,13 +4,13 @@
 
 <script setup>
 import Status from './status.vue'
+import Ghost from './ghost.vue'
 import Type from './type.vue'
 import Round from './round.vue'
 import Size from './size.vue'
 import Disabled from './disabled.vue'
 import Icon from './icon.vue'
 import Loading from './loading.vue'
-import Ghost from './ghost.vue'
 </script>
 
 
@@ -49,6 +49,23 @@ import Ghost from './ghost.vue'
 
 ::: details 查看代码
 <<< @/zh/components/button/type.vue{3-7,9-13,15-19,21-25,30}
+:::
+
+</div>
+
+
+### 幽灵按钮(ghost)
+
+使用 ghost 来定义按钮是否为幽灵按钮。
+
+幽灵按钮背景透明，常用于有色背景上。
+
+<div class="demo-block">
+
+<Ghost />
+
+::: details 查看代码
+<<< @/zh/components/button/ghost.vue
 :::
 
 </div>
@@ -136,24 +153,6 @@ import Ghost from './ghost.vue'
 ### 自定义颜色(color)
 
 使用 color 来自定义按钮的颜色，目前仅支持16进制颜色代码。
-
-
-
-### 幽灵按钮(ghost)
-
-使用 ghost 来定义按钮是否为幽灵按钮。
-
-幽灵按钮与描边按钮相像，但是背景透明，常用于有色背景上。
-
-<div class="demo-block">
-
-<Ghost />
-
-::: details 查看代码
-<<< @/zh/components/button/ghost.vue
-:::
-
-</div>
 
 
 

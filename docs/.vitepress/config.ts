@@ -46,32 +46,32 @@ export default defineConfig({
         },
       },
     },
-    en: {
-      lang: 'en', // 可选，将作为“lang”属性添加到“html”标签上
-      label: 'English',
-      link: '/en/', // 默认是 /en/ -- 显示在导航栏翻译菜单上，可以是外部的
-      description: 'A Vue.js 3.x UI Components Library.',
-      titleTemplate: 'BFUI Docs',
-      // Theme related configurations.
-      themeConfig: {
-        nav: navbarEn,
-        sidebar: sidebarEn,
-        outlineTitle: 'On this page',
-        editLink: {
-          pattern: 'https://github.com/BF-Teams/bfui-vue/edit/main/docs/:path',
-          text: 'Suggest changes to this page',
-        },
-        lastUpdatedText: 'Updated Date',
-        docFooter: {
-          prev: 'Previous page',
-          next: 'Next page',
-        },
-        footer: {
-          message: 'Released under the MIT License.',
-          copyright:
-            'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
-        },
-      },
-    },
+    // en: {
+    //   lang: 'en', // 可选，将作为“lang”属性添加到“html”标签上
+    //   label: 'English',
+    //   link: '/en/', // 默认是 /en/ -- 显示在导航栏翻译菜单上，可以是外部的
+    //   description: 'A Vue.js 3.x UI Components Library.',
+    //   titleTemplate: 'BFUI Docs',
+    //   // Theme related configurations.
+    //   themeConfig: {
+    //     nav: navbarEn,
+    //     sidebar: sidebarEn,
+    //     outlineTitle: 'On this page',
+    //     editLink: {
+    //       pattern: 'https://github.com/BF-Teams/bfui-vue/edit/main/docs/:path',
+    //       text: 'Suggest changes to this page',
+    //     },
+    //     lastUpdatedText: 'Updated Date',
+    //     docFooter: {
+    //       prev: 'Previous page',
+    //       next: 'Next page',
+    //     },
+    //     footer: {
+    //       message: 'Released under the MIT License.',
+    //       copyright:
+    //         'Copyright © 2023-present <a href="https://github.com/BF-Teams/" target="_blank" rel="noreferrer">BF-Teams</a>',
+    //     },
+    //   },
+    // },
   },
 });
