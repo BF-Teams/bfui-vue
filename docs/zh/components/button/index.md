@@ -9,6 +9,7 @@ import Round from './round.vue'
 import Size from './size.vue'
 import Disabled from './disabled.vue'
 import Icon from './icon.vue'
+import Loading from './loading.vue'
 import Ghost from './ghost.vue'
 </script>
 
@@ -116,14 +117,27 @@ import Ghost from './ghost.vue'
 
 </div>
 
+
 ### 加载按钮(loading)
 
 使用 loading 来定义按钮是否处于加载中。
+
+<div class="demo-block">
+
+<Loading />
+
+::: details 查看代码
+<<< @/zh/components/button/loading.vue
+:::
+
+</div>
 
 
 ### 自定义颜色(color)
 
 使用 color 来自定义按钮的颜色，目前仅支持16进制颜色代码。
+
+
 
 ### 幽灵按钮(ghost)
 

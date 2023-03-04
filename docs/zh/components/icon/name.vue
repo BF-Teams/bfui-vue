@@ -24,5 +24,3 @@
 <script setup lang="ts">
 import { BfIcon } from '@bf-teams/bfui-vue';
 </script>
-
-<style lang="less" scoped></style>

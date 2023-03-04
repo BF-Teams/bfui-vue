@@ -12,8 +12,9 @@
   .bf-dialog {
     background-color: var(--bf-color-blank);
     border-radius: 20px;
-    width: 500px;
-    // height: 200px;
+    min-width: 300px;
+    max-width: 80vw;
+    max-height: 90vh;
 
     .bf-dialog_header {
       // background-color: rgba(0, 255, 255, 0.363);
@@ -22,20 +23,33 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #f1f1f1;
       box-sizing: border-box;
       .bf-dialog_title {
         color: var(--bf-text-color-primary);
+      }
+      .bf-button {
+        padding: 0;
+        width: 40px;
+        height: 40px;
       }
     }
 
     .bf-dialog_body {
       min-height: 100px;
+      max-height: calc(100vh - 180px);
+      padding: 14px 20px;
+      overflow: hidden auto;
+      // .bf-dalog_content {
+      //   height: 700px;
+      // }
     }
 
     .bf-dialog_footer {
-      padding: 16px 20px;
+      padding: 14px 20px;
       text-align: right;
+      border-top: 1px solid #f1f1f1;
+      box-sizing: border-box;
     }
   }
 }

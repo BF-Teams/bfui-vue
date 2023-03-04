@@ -1,5 +1,6 @@
 <template>
   <button
+    @click="onClick"
     class="bf-button"
     :class="[
     `bf-button-status-${status}`,
@@ -8,82 +9,61 @@
     {
       'is-round': round,
       'is-disabled': disabled,
-      'is-loading': loading,
+      'is-loading': buttonLoading,
       'is-ghost': ghost,
     },
   ]"
     :disabled="disabled"
-    @click="handleClick"
   >
-    <bf-icon class="bf-button_icon" v-if="icon" :name="icon" />
-    <!-- $slots.default：可以得到使用的插槽 -->
+    <bf-icon class="bf-button_icon" v-if="buttonIcon" :name="buttonIcon" :spin="iconSpin" />
     <span class="bf-button_text" v-if="$slots.default">
       <slot></slot>
     </span>
   </button>
 </template>
 
-<script lang="ts">
-import { defineComponent} from 'vue'
-import BfIcon from '@bf-teams/bfui-vue/icon';
+<script setup lang="ts">
+import { defineProps, defineEmits, watch, ref } from "vue"
+import { BfIcon } from "@bf-teams/bfui-vue";
 
-export default defineComponent({
-  name: "BfButton",
-  components: {
-    BfIcon,
-  },
-  props: {
-    status: {
-      type: String,
-      default: "default",
-    },
-    type: {
-      type: String,
-      default: "default",
-    },
-    round: {
-      type: Boolean,
-      default: false,
-    },
-    size: {
-      type: String,
-      default: "default",
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    icon: {
-      type: String,
-      default: "",
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
-    color: {
-      type: String,
-      default: "default",
-    },
-    ghost: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  emits: ['click'],
-  setup(props, { emit }) {
-    props.type // <-- 类型：string
-    emit('click') // <-- 类型检查 / 自动补全
+// props
+const props = defineProps({
+  status: { type: String, default: "default" },
+  type: { type: String, default: "default" },
+  round: { type: Boolean, default: false },
+  size: { type: String, default: "default" },
+  disabled: { type: Boolean, default: false },
+  icon: { type: String, default: "" },
+  loading: { type: Boolean, default: false },
+  color: { type: String, default: "default" },
+  ghost: { type: Boolean, default: false },
+})
 
-    const handleClick = function (e: MouseEvent) {
-      this.$emit("click", e);
-    }
+// data
+const buttonIcon = ref(props.icon)
+const buttonLoading = ref(props.loading)
+const iconSpin = ref(false)
 
-    return {
-      handleClick
-    }
-  },
-});
+// watch props
+watch(() => props.loading, (newVal) => {
+  // console.log('传入的loading改变为：', newVal);
+  if(newVal) {
+    buttonLoading.value = true
+    buttonIcon.value = 'loading'
+    iconSpin.value = true
+  } else {
+    buttonLoading.value = false
+    buttonIcon.value = props.icon
+    iconSpin.value = false
+  }
+})
+
+// emit
+const emit = defineEmits(['click'])
+// methods
+const onClick = () => {
+  emit('click')
+}
 </script>
 
 <style lang="less" scoped>

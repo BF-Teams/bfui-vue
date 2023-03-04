@@ -3,7 +3,7 @@
     <h2>Button组件运行测试</h2>
     <br />
 
-    <bf-button>默认按钮</bf-button>
+    <bf-button @click="onClick">默认按钮</bf-button>
     <bf-button status="primary">主要按钮</bf-button>
     <bf-button status="success">成功按钮</bf-button>
     <bf-button status="warning">警告按钮</bf-button>
@@ -78,14 +78,20 @@
 
 <script setup lang="ts">
 import { BfButton, BfIcon } from '@bf-teams/bfui-vue';
+
+// methods
+const onClick = () => {
+  console.log('您点击了按钮')
+}
 </script>
 
 <style lang="less" scoped>
 .play {
   padding-bottom: 200px;
-}
-.bf-button {
-  margin-left: 10px;
-  margin-bottom: 6px;
+
+  .bf-button {
+    margin-left: 10px;
+    margin-bottom: 6px;
+  }
 }
 </style>

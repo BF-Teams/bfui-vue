@@ -60,6 +60,6 @@ export const headConfig: HeadConfig = [
   ['meta', { name: 'theme-color', content: '#ffffff' }],
   [
     'script',
-    { type: 'text/javascript', src: 'https://at.alicdn.com/t/c/font_3916221_gs4f2j688la.js' },
+    { type: 'text/javascript', src: 'https://at.alicdn.com/t/c/font_3916221_f50b332j0yl.js' },
   ],
 ];

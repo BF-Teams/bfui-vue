@@ -7,6 +7,11 @@
     <bf-icon name="experiment" />
     <bf-icon name="bell" />
     <bf-icon name="loading" />
+    <br />
+    <bf-icon name="setting" spin />
+    <bf-icon name="experiment" spin />
+    <bf-icon name="bell" spin />
+    <bf-icon name="loading" spin />
   </div>
 </template>
 
@@ -14,4 +19,9 @@
 import { BfIcon } from '@bf-teams/bfui-vue';
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.play {
+  font-size: 30px;
+  padding-bottom: 200px;
+}
+</style>

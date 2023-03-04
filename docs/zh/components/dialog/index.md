@@ -8,21 +8,20 @@
 
 ### Dialog Props
 
-| 属性 Props | 说明                                           | 类型    | 默认值  |
-| ---------- | ---------------------------------------------- | ------- | ------- |
-| **title**  | 对话框标题                                     | String  | -       |
-| **name**   | 是否异步关闭                                   | Boolean | `false` |
-| **width**  | 自定义宽度                                     | String  |         |
-| **center** | 是否让 Dialog 的 header 和 footer 部分居中排列 | Boolean | `false` |
+| 属性 Props  | 说明                     | 类型    | 默认值  |
+| ----------- | ------------------------ | ------- | ------- |
+| **visible** | 控制对话框是否显示       | Boolean | `false` |
+| **title**   | 对话框标题               | String  | -       |
+| **center**  | 是否让对话框内容居中排列 | Boolean | `false` |
+| **width**   | 自定义宽度               | String  |         |
 
 ### Dialog Events
 
 | 事件 Events   | 说明             | 回调参数 |
 | ------------- | ---------------- | -------- |
-| **onConfirm** | 确认时触发       |          |
-| **onCancel**  | 取消时触发       |          |
-| **onClose**   | 关闭对话框时触发 |          |
-
+| **onCancel**  | 点击取消时触发   |          |
+| **onConfirm** | 点击确定时触发   |          |
+| **onClose**   | 对话框关闭时触发 |          |
 
 ### Dialog Slots
 
@@ -31,4 +30,3 @@
 | **header**   | 自定义页头   |
 | **footer**   | 自定义页脚   |
 | **onCancel** | 取消时的回调 |
-

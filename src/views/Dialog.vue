@@ -3,12 +3,15 @@
     <h2>Dialog组件运行测试</h2>
     <br />
 
-    <bf-dialog title="标题"></bf-dialog>
+    <bf-dialog v-model:visible="visible" title="对话框标题"></bf-dialog>
   </div>
 </template>
 
 <script setup lang="ts">
-// import { BfDialog } from '@bf-teams/bfui-vue';
+import { ref } from 'vue'
+import { BfDialog } from '@bf-teams/bfui-vue';
+
+const visible = ref(false)
 </script>
 
 <style lang="less" scoped></style>
