@@ -1,10 +1,11 @@
 :root.dark {
-  --bf-color-title: rgba(0, 0, 0, 0.85);
-  --bf-color-primary-text: rgba(0, 0, 0, 0.85);
-  --bf-color-secondary-text: rgba(0, 0, 0, 0.45);
-  --bf-color-disable: rgba(0, 0, 0, 0.25);
-  --bf-color-border: rgba(0, 0, 0, 0.15);
-  --bf-color-dividers: rgba(0, 0, 0, 0.06);
-  --bf-color-background: rgba(0, 0, 0, 0.04);
-  --bf-color-table-header: rgba(0, 0, 0, 0.02);
+  --bf-color-title: rgba(255, 255, 255, 0.85);
+  --bf-color-primary-text: rgba(255, 255, 255, 0.85);
+  --bf-color-secondary-text: rgba(255, 255, 255, 0.45);
+  --bf-color-disable: rgba(255, 255, 255, 0.30);
+  --bf-color-disable-background: var(--bf-color-gray-11);
+  --bf-color-border: rgba(255, 255, 255, 0.20);
+  --bf-color-dividers: rgba(255, 255, 255, 0.12);
+  --bf-color-background: rgba(255, 255, 255, 0.08);
+  --bf-color-table-header: rgba(255, 255, 255, 0.04);
 }

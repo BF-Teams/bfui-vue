@@ -42,11 +42,13 @@ import { BfButton } from '@bf-teams/bfui-vue';
   .form-content {
     padding-bottom: 10px;
     input {
-      background-color: white;
+      background-color: rgba(161, 161, 161, .1);
       width: 100%;
       height: 35px;
       margin: 5px 0;
       padding: 0 10px;
+      border: 1px solid #1677ff;
+      border-radius: 4px;
     }
   }
   .form-btn {

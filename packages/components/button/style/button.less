@@ -89,7 +89,7 @@
 .bf-button.bf-button-status-normal.bf-button-type-dashed,
 .bf-button.bf-button-status-normal.bf-button-type-text {
   color: var(--bf-color-normal);
-  background-color: var(--bf-color-blue-1);
+  background-color: var(--bf-color-blue-2);
 }
 .bf-button.bf-button-status-normal.bf-button-type-outline:hover,
 .bf-button.bf-button-status-normal.bf-button-type-dashed:hover,
@@ -99,14 +99,14 @@
 .bf-button.bf-button-status-normal.bf-button-type-outline:active,
 .bf-button.bf-button-status-normal.bf-button-type-dashed:active,
 .bf-button.bf-button-status-normal.bf-button-type-text:active {
-  background-color: var(--bf-color-blue-1);
+  background-color: var(--bf-color-blue-3);
 }
 // 成功按钮
 .bf-button.bf-button-status-success.bf-button-type-outline,
 .bf-button.bf-button-status-success.bf-button-type-dashed,
 .bf-button.bf-button-status-success.bf-button-type-text {
   color: var(--bf-color-success);
-  background-color: var(--bf-color-green-1);
+  background-color: var(--bf-color-green-2);
 }
 .bf-button.bf-button-status-success.bf-button-type-outline:hover,
 .bf-button.bf-button-status-success.bf-button-type-dashed:hover,
@@ -116,14 +116,14 @@
 .bf-button.bf-button-status-success.bf-button-type-outline:active,
 .bf-button.bf-button-status-success.bf-button-type-dashed:active,
 .bf-button.bf-button-status-success.bf-button-type-text:active {
-  background-color: var(--bf-color-green-1);
+  background-color: var(--bf-color-green-3);
 }
 // 警告按钮
 .bf-button.bf-button-status-warning.bf-button-type-outline,
 .bf-button.bf-button-status-warning.bf-button-type-dashed,
 .bf-button.bf-button-status-warning.bf-button-type-text {
   color: var(--bf-color-warning);
-  background-color: var(--bf-color-orange-1);
+  background-color: var(--bf-color-orange-2);
 }
 .bf-button.bf-button-status-warning.bf-button-type-outline:hover,
 .bf-button.bf-button-status-warning.bf-button-type-dashed:hover,
@@ -133,14 +133,14 @@
 .bf-button.bf-button-status-warning.bf-button-type-outline:active,
 .bf-button.bf-button-status-warning.bf-button-type-dashed:active,
 .bf-button.bf-button-status-warning.bf-button-type-text:active {
-  background-color: var(--bf-color-orange-1);
+  background-color: var(--bf-color-orange-3);
 }
 // 危险按钮
 .bf-button.bf-button-status-danger.bf-button-type-outline,
 .bf-button.bf-button-status-danger.bf-button-type-dashed,
 .bf-button.bf-button-status-danger.bf-button-type-text {
   color: var(--bf-color-danger);
-  background-color: var(--bf-color-red-1);
+  background-color: var(--bf-color-red-2);
 }
 .bf-button.bf-button-status-danger.bf-button-type-outline:hover,
 .bf-button.bf-button-status-danger.bf-button-type-dashed:hover,
@@ -150,7 +150,7 @@
 .bf-button.bf-button-status-danger.bf-button-type-outline:active,
 .bf-button.bf-button-status-danger.bf-button-type-dashed:active,
 .bf-button.bf-button-status-danger.bf-button-type-text:active {
-  background-color: var(--bf-color-red-1);
+  background-color: var(--bf-color-red-3);
 }
 
 // 虚线类型
@@ -168,6 +168,12 @@
 .bf-button.bf-button-status-default.is-ghost {
   background-color: transparent;
   border-color: transparent;
+}
+.bf-button.bf-button-status-default.is-ghost:hover {
+  opacity: .8;
+}
+.bf-button.bf-button-status-default.is-ghost:active {
+  opacity: .5;
 }
 
 // 主要按钮
@@ -286,7 +292,7 @@
 .bf-button.is-disabled:active {
   cursor: not-allowed;
   color: var(--bf-color-disable) !important;
-  background-color: var(--bf-color-gray-4) !important;
+  background-color: var(--bf-color-disable-background) !important;
 }
 .bf-button.bf-button-type-default.is-disabled,
 .bf-button.bf-button-type-outline.is-disabled,

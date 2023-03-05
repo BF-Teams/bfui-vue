@@ -14,7 +14,7 @@ import DisabledTest from './disabledTest.vue'
 import Icon from './icon.vue'
 import Loading from './loading.vue'
 import Block from './block.vue'
-import Color from './color.vue'
+import Custom from './custom.vue'
 </script>
 
 ## 代码示例
@@ -202,16 +202,16 @@ Block 按钮在宽度上充满其所在的父容器，常见于移动端和一�
 
 ### 自定义样式
 
-考虑到按钮的背景、文字、悬浮和点击样式都会影响按钮的整体美观性，故不再提供单独参数来定义按钮颜色。如有需求，请直接通过 CSS 控制按钮颜色或其他样式，比如通过 `style` 属性采用内联写法直接写在标签中。
+考虑到按钮的背景、文字、悬浮和点击样式都会影响按钮的整体美观性，故不再提供单独参数来定义按钮颜色。如有需求，请直接通过 CSS 控制按钮颜色或其他样式。
 
-可以发挥创造力实现渐变色按钮、圆形按钮、圆角矩形按钮、巨大按钮等。
+简单样式可以在 `style` 属性直接采用内联写法，复杂样式就通过内嵌和外联 CSS 来实现。发挥创造力可以实现渐变色、方形、圆角矩形、流光动画等更复杂样式按钮。如果某样式未生效可能是由于优先级不足，可尝试添加 `!important` 提高应用优先权。
 
 <div class="demo-block">
 
-<Color />
+<Custom />
 
 ::: details 查看代码
-<<< @/zh/components/button/color.vue
+<<< @/zh/components/button/custom.vue
 :::
 
 </div>

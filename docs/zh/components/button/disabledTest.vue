@@ -1,6 +1,8 @@
 <template>
   <div>
-    <bf-button size="large" @click="onClick" :disabled="currentStateIsDisable">点击执行</bf-button>
+    <bf-button status="success" size="large" @click="onClick" :disabled="currentStateIsDisable"
+      >点击执行</bf-button
+    >
 
     <br /><br />
 

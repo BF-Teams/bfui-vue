@@ -16,35 +16,35 @@
     <bf-button type="text" round><bf-icon name="bell"></bf-icon></bf-button>
     <br />
     <div style="margin: 10px 0;">图标在文字前面（使用 Button 组件的 icon 属性）：</div>
-    <bf-button icon="setting">设置</bf-button>
+    <bf-button icon="setting">默认按钮</bf-button>
     <bf-button icon="loading" status="normal">加载</bf-button>
     <bf-button icon="bell" status="success">订阅</bf-button>
     <bf-button icon="experiment" status="warning">实验</bf-button>
     <bf-button icon="delete" status="danger">删除</bf-button>
     <br />
-    <bf-button icon="setting" type="outline">设置</bf-button>
+    <bf-button icon="setting" type="outline">边框按钮</bf-button>
     <bf-button icon="loading" status="normal" type="outline">加载</bf-button>
     <bf-button icon="bell" status="success" type="outline">订阅</bf-button>
     <bf-button icon="experiment" status="warning" type="outline">实验</bf-button>
     <bf-button icon="delete" status="danger" type="outline">删除</bf-button>
     <br />
-    <bf-button icon="setting" type="dashed">设置</bf-button>
+    <bf-button icon="setting" type="dashed">虚线按钮</bf-button>
     <bf-button icon="loading" status="normal" type="dashed">加载</bf-button>
     <bf-button icon="bell" status="success" type="dashed">订阅</bf-button>
     <bf-button icon="experiment" status="warning" type="dashed">实验</bf-button>
     <bf-button icon="delete" status="danger" type="dashed">删除</bf-button>
     <br />
-    <bf-button icon="setting" type="text">设置</bf-button>
+    <bf-button icon="setting" type="text">文字按钮</bf-button>
     <bf-button icon="loading" status="normal" type="text">加载</bf-button>
     <bf-button icon="bell" status="success" type="text">订阅</bf-button>
     <bf-button icon="experiment" status="warning" type="text">实验</bf-button>
     <bf-button icon="delete" status="danger" type="text">删除</bf-button>
     <br />
-    <bf-button icon="setting" disabled>设置</bf-button>
-    <bf-button icon="loading" disabled>加载</bf-button>
-    <bf-button icon="bell" disabled>订阅</bf-button>
-    <bf-button icon="experiment" disabled>实验</bf-button>
-    <bf-button icon="delete" disabled>删除</bf-button>
+    <bf-button icon="setting" disabled>禁用按钮</bf-button>
+    <bf-button icon="loading" disabled>禁用</bf-button>
+    <bf-button icon="bell" disabled>禁用</bf-button>
+    <bf-button icon="experiment" disabled>禁用</bf-button>
+    <bf-button icon="delete" disabled>禁用</bf-button>
     <br />
     <div style="margin: 10px 0;">图标在文字后面（在 Button 中直接放置 Icon 组件）：</div>
     <bf-button>设置 <bf-icon name="setting"></bf-icon></bf-button>
