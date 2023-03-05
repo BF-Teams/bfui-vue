@@ -1,13 +1,10 @@
-# 参与开发
+# 开发流程
 
 如果你是第一次在 GitHub 上发起 Pull Request ，可以阅读下面这两篇文章来学习：
 
 - [第一次参与开源项目](https://github.com/firstcontributions/first-contributions/blob/main/translations/README.zh-cn.md)
 - [如何优雅地在 GitHub 上贡献代码](https://segmentfault.com/a/1190000000736629)
 
-我们为你精心准备了详尽的指南，指导你如何为 BFUI 贡献一份自己的力量。
-
-请在参与开发之前花几分钟认真阅读本页内容。
 
 ## 项目技术栈
 

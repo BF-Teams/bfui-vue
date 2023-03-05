@@ -70,3 +70,6 @@ const members = [
 目前由一个学生团队进行本项目的开发和日常维护，下面是对主要成员的介绍。
 
 <VPTeamMembers size="small" :members="members" />
+
+
+更多参与者和贡献细节请前往 [GitHub Contributors](https://github.com/BF-Teams/bfui-vue/graphs/contributors)

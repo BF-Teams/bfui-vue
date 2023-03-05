@@ -5,7 +5,9 @@
 </template>
 
 <script setup lang="ts">
-// const props =
+import { defineProps } from "vue"
+
+// props
 defineProps({
   name: { type: String, default: '' },
   spin: { type: Boolean, defaute: false }

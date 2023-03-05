@@ -20,7 +20,7 @@ export const navbarZh: Array<NavItem> = [
     text: '相关链接',
     items: [
       { text: '博客动态', link: 'https://blog.meta-code.top/tags/BFUI/' },
-      { text: '交流社区', link: 'https://github.com/Barry-Flynn/' },
+      { text: '交流社区', link: 'https://support.qq.com/products/417041/' },
     ],
   },
 ];

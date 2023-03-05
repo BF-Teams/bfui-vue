@@ -4,7 +4,7 @@ import router from './router';
 import BFUI from '@bf-teams/bfui-vue'; // 全局引入BFUI
 
 import './assets/main.css';
-import '@bf-teams/bfui-vue/style'; // 引入BFUI全局样式
+import '@bf-teams/bfui-vue/theme'; // 引入BFUI主题
 
 const app = createApp(App);
 

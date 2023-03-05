@@ -3,12 +3,16 @@
 色彩在产品中起到传递信息、创建层级、表达情感、构建一致性的目的。
 
 <script setup>
-import Palette from './palette.vue'
+import BaseColor from './baseColor.vue'
+import BrandColor from './brandColor.vue'
+import FunctionalColor from './functionalColor.vue'
 </script>
 
 ## 基础色板
 
-<Palette />
+以下是 BFUI 的基础色板，点击颜色自动复制。
+
+<BaseColor />
 
 ## 产品色彩体系
 
@@ -16,14 +20,14 @@ import Palette from './palette.vue'
 
 品牌色是体现产品特性和传播理念最直观的视觉元素之一。BFUI 品牌色取自基础色板中从浅至深第六个蓝色，Hex 值为 `#1677ff`，应用场景包括：关键行动点，操作状态、重要信息高亮，图形化等场景。品牌色的应用案例如下：
 
-![品牌色的应用](./Brand-Color.png)
+<BrandColor />
 
 
 ### 功能色
 
 功能色代表了明确的信息以及状态，比如成功、出错、失败、提醒、链接等。功能色的选取需要遵守用户对色彩的基本认知。BFUI 的功能色板如下：
 
-![功能色的应用](./Functional-Color.png)
+<FunctionalColor />
 
 
 ### 中性色

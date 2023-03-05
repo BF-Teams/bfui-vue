@@ -1,204 +1,241 @@
+@bf-color-white: #ffffff;
 
 .bf-button {
   font-size: 14px;
   line-height: 22px;
-  color: var(--bf-button-text-color);
-  background-color: var(--bf-button-bg-color);
   border-width: 1px;
   border-style: solid;
-  border-color: var(--bf-button-border-color);
   border-radius: 4px;
   outline: none;
   padding: 4px 16px;
   cursor: pointer;
   vertical-align: middle;
   white-space: nowrap;
-  transition: .1s;
-
-  .bf-button_icon + .bf-button_text {
-    margin-left: 5px;
-  }
+  transition: 0.1s;
+  box-sizing: border-box;
+  user-select: none;
 }
 
 .bf-button + .bf-button {
   margin-left: 10px;
 }
 
-
 // ---------- status 控制按钮颜色 ----------
 
 // 默认按钮
+.bf-button.bf-button-status-default {
+  background-color: var(--bf-color-default);
+  border-color: var(--bf-color-border);
+}
 .bf-button.bf-button-status-default:hover {
-  background-color: var(--bf-button-bg-color-hover);
+  background-color: var(--bf-color-default-hover);
 }
 .bf-button.bf-button-status-default:active {
-  background-color: var(--bf-button-bg-color-active);
+  background-color: var(--bf-color-default-active);
 }
 // 主要按钮
-.bf-button.bf-button-status-primary {
-  color: var(--bf-color-blank);
-  background-color: var(--bf-color-primary);
-  border-color: var(--bf-color-primary);
+.bf-button.bf-button-status-normal {
+  color: @bf-color-white;
+  background-color: var(--bf-color-normal);
+  border-color: var(--bf-color-normal);
 }
-.bf-button.bf-button-status-primary:hover {
-  background-color: var(--bf-color-primary-light);
+.bf-button.bf-button-status-normal:hover {
+  background-color: var(--bf-color-normal-hover);
 }
-.bf-button.bf-button-status-primary:active {
-  background-color: var(--bf-color-primary-dark);
+.bf-button.bf-button-status-normal:active {
+  background-color: var(--bf-color-normal-active);
 }
 // 成功按钮
 .bf-button.bf-button-status-success {
-  color: var(--bf-color-blank);
+  color: @bf-color-white;
   background-color: var(--bf-color-success);
   border-color: var(--bf-color-success);
 }
 .bf-button.bf-button-status-success:hover {
-  background-color: var(--bf-color-success-light);
+  background-color: var(--bf-color-success-hover);
 }
 .bf-button.bf-button-status-success:active {
-  background-color: var(--bf-color-success-dark);
+  background-color: var(--bf-color-success-active);
 }
 // 警告按钮
 .bf-button.bf-button-status-warning {
-  color: var(--bf-color-blank);
+  color: @bf-color-white;
   background-color: var(--bf-color-warning);
   border-color: var(--bf-color-warning);
 }
 .bf-button.bf-button-status-warning:hover {
-  background-color: var(--bf-color-warning-light);
+  background-color: var(--bf-color-warning-hover);
 }
 .bf-button.bf-button-status-warning:active {
-  background-color: var(--bf-color-warning-dark);
+  background-color: var(--bf-color-warning-active);
 }
 // 危险按钮
 .bf-button.bf-button-status-danger {
-  color: var(--bf-color-blank);
+  color: @bf-color-white;
   background-color: var(--bf-color-danger);
   border-color: var(--bf-color-danger);
 }
 .bf-button.bf-button-status-danger:hover {
-  background-color: var(--bf-color-danger-light);
+  background-color: var(--bf-color-danger-hover);
 }
 .bf-button.bf-button-status-danger:active {
-  background-color: var(--bf-color-danger-dark);
+  background-color: var(--bf-color-danger-active);
 }
-
 
 // ---------- type 控制边框样式 ----------
 
-// 描边按钮
-.bf-button.bf-button-type-outline {
-  background-color: var(--bf-button-bg-color);
+// 主要按钮
+.bf-button.bf-button-status-normal.bf-button-type-outline,
+.bf-button.bf-button-status-normal.bf-button-type-dashed,
+.bf-button.bf-button-status-normal.bf-button-type-text {
+  color: var(--bf-color-normal);
+  background-color: var(--bf-color-blue-1);
 }
-.bf-button.bf-button-type-outline:hover,
-.bf-button.bf-button-type-outline:active  {
-  color: var(--bf-color-blank);
+.bf-button.bf-button-status-normal.bf-button-type-outline:hover,
+.bf-button.bf-button-status-normal.bf-button-type-dashed:hover,
+.bf-button.bf-button-status-normal.bf-button-type-text:hover {
+  background-color: var(--bf-color-blue-2);
 }
-// 默认按钮 描边
-.bf-button.bf-button-status-default.bf-button-type-outline:hover,
-.bf-button.bf-button-status-default.bf-button-type-outline:active {
-  color: var(--bf-button-text-color);
+.bf-button.bf-button-status-normal.bf-button-type-outline:active,
+.bf-button.bf-button-status-normal.bf-button-type-dashed:active,
+.bf-button.bf-button-status-normal.bf-button-type-text:active {
+  background-color: var(--bf-color-blue-1);
 }
-// 主要按钮 描边
-.bf-button.bf-button-status-primary.bf-button-type-outline {
-  color: var(--bf-color-primary);
-  border-color: var(--bf-color-primary);
-  background-color: var(--bf-button-bg-color-status-primary);
-}
-// 成功按钮 描边
-.bf-button.bf-button-status-success.bf-button-type-outline {
-  color: var(--bf-color-success);
-  border-color: var(--bf-color-success);
-  background-color: var(--bf-button-bg-color-status-success);
-}
-// 警告按钮 描边
-.bf-button.bf-button-status-warning.bf-button-type-outline {
-  color: var(--bf-color-warning);
-  border-color: var(--bf-color-warning);
-  background-color: var(--bf-button-bg-color-status-warning);
-}
-// 危险按钮 描边
-.bf-button.bf-button-status-danger.bf-button-type-outline {
-  color: var(--bf-color-danger);
-  border-color: var(--bf-color-danger);
-  background-color: var(--bf-button-bg-color-status-danger);
-}
-
-// 虚线按钮
-.bf-button.bf-button-type-dashed {
-  border-style: dashed;
-  background-color: var(--bf-button-bg-color);
-}
-.bf-button.bf-button-type-dashed:hover,
-.bf-button.bf-button-type-dashed:active {
-  color: var(--bf-color-blank);
-}
-// 默认按钮 虚线
-.bf-button.bf-button-status-default.bf-button-type-dashed:hover,
-.bf-button.bf-button-status-default.bf-button-type-dashed:active {
-  color: var(--bf-button-text-color);
-}
-// 主要按钮 虚线
-.bf-button.bf-button-status-primary.bf-button-type-dashed:not(.is-ghost) {
-  color: var(--bf-color-primary);
-  border-color: var(--bf-color-primary);
-  background-color: var(--bf-button-bg-color-status-primary);
-}
-// 成功按钮 虚线
-.bf-button.bf-button-status-success.bf-button-type-dashed:not(.is-ghost) {
-  color: var(--bf-color-success);
-  border-color: var(--bf-color-success);
-  background-color: var(--bf-button-bg-color-status-success);
-}
-// 警告按钮 虚线
-.bf-button.bf-button-status-warning.bf-button-type-dashed:not(.is-ghost) {
-  color: var(--bf-color-warning);
-  border-color: var(--bf-color-warning);
-  background-color: var(--bf-button-bg-color-status-warning);
-}
-// 危险按钮 虚线
-.bf-button.bf-button-status-danger.bf-button-type-dashed:not(.is-ghost) {
-  color: var(--bf-color-danger);
-  border-color: var(--bf-color-danger);
-  background-color: var(--bf-button-bg-color-status-danger);
-}
-
-// 文字按钮
-.bf-button.bf-button-type-text {
-  border-color: transparent;
-  background-color: var(--bf-button-bg-color);
-}
-.bf-button.bf-button-type-text:hover {
-  background-color: var(--bf-button-bg-color-hover);
-}
-.bf-button.bf-button-type-text:active {
-  background-color: var(--bf-button-bg-color-active);
-}
-// 主要按钮 文字
-.bf-button.bf-button-status-primary.bf-button-type-text {
-  color: var(--bf-color-primary);
-}
-// 成功按钮 文字
+// 成功按钮
+.bf-button.bf-button-status-success.bf-button-type-outline,
+.bf-button.bf-button-status-success.bf-button-type-dashed,
 .bf-button.bf-button-status-success.bf-button-type-text {
   color: var(--bf-color-success);
+  background-color: var(--bf-color-green-1);
 }
-// 警告按钮 文字
+.bf-button.bf-button-status-success.bf-button-type-outline:hover,
+.bf-button.bf-button-status-success.bf-button-type-dashed:hover,
+.bf-button.bf-button-status-success.bf-button-type-text:hover {
+  background-color: var(--bf-color-green-2);
+}
+.bf-button.bf-button-status-success.bf-button-type-outline:active,
+.bf-button.bf-button-status-success.bf-button-type-dashed:active,
+.bf-button.bf-button-status-success.bf-button-type-text:active {
+  background-color: var(--bf-color-green-1);
+}
+// 警告按钮
+.bf-button.bf-button-status-warning.bf-button-type-outline,
+.bf-button.bf-button-status-warning.bf-button-type-dashed,
 .bf-button.bf-button-status-warning.bf-button-type-text {
   color: var(--bf-color-warning);
+  background-color: var(--bf-color-orange-1);
 }
-// 危险按钮 文字
+.bf-button.bf-button-status-warning.bf-button-type-outline:hover,
+.bf-button.bf-button-status-warning.bf-button-type-dashed:hover,
+.bf-button.bf-button-status-warning.bf-button-type-text:hover {
+  background-color: var(--bf-color-orange-2);
+}
+.bf-button.bf-button-status-warning.bf-button-type-outline:active,
+.bf-button.bf-button-status-warning.bf-button-type-dashed:active,
+.bf-button.bf-button-status-warning.bf-button-type-text:active {
+  background-color: var(--bf-color-orange-1);
+}
+// 危险按钮
+.bf-button.bf-button-status-danger.bf-button-type-outline,
+.bf-button.bf-button-status-danger.bf-button-type-dashed,
 .bf-button.bf-button-status-danger.bf-button-type-text {
   color: var(--bf-color-danger);
+  background-color: var(--bf-color-red-1);
+}
+.bf-button.bf-button-status-danger.bf-button-type-outline:hover,
+.bf-button.bf-button-status-danger.bf-button-type-dashed:hover,
+.bf-button.bf-button-status-danger.bf-button-type-text:hover {
+  background-color: var(--bf-color-red-2);
+}
+.bf-button.bf-button-status-danger.bf-button-type-outline:active,
+.bf-button.bf-button-status-danger.bf-button-type-dashed:active,
+.bf-button.bf-button-status-danger.bf-button-type-text:active {
+  background-color: var(--bf-color-red-1);
 }
 
-
-// ---------- round 控制是否圆角 ----------
-
-// 圆角按钮
-.bf-button.is-round {
-  border-radius: 20px;
+// 虚线类型
+.bf-button.bf-button-type-dashed {
+  border-style: dashed;
 }
 
+// 文字类型
+.bf-button.bf-button-type-text {
+  border-color: transparent;
+}
+
+// ---------- ghost 幽灵按钮控制背景透明 ----------
+
+.bf-button.bf-button-status-default.is-ghost {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+// 主要按钮
+.bf-button.bf-button-status-normal.is-ghost {
+  color: var(--bf-color-normal);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-normal.is-ghost:hover {
+  color: var(--bf-color-blue-5);
+  border-color: var(--bf-color-blue-5);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-normal.is-ghost:active {
+  color: var(--bf-color-blue-7);
+  border-color: var(--bf-color-blue-7);
+  background-color: transparent;
+}
+// 成功按钮
+.bf-button.bf-button-status-success.is-ghost {
+  color: var(--bf-color-success);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-success.is-ghost:hover {
+  color: var(--bf-color-green-5);
+  border-color: var(--bf-color-green-5);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-success.is-ghost:active {
+  color: var(--bf-color-green-7);
+  border-color: var(--bf-color-green-7);
+  background-color: transparent;
+}
+// 警告按钮
+.bf-button.bf-button-status-warning.is-ghost {
+  color: var(--bf-color-warning);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-warning.is-ghost:hover {
+  color: var(--bf-color-orange-4);
+  border-color: var(--bf-color-orange-4);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-warning.is-ghost:active {
+  color: var(--bf-color-orange-6);
+  border-color: var(--bf-color-orange-6);
+  background-color: transparent;
+}
+// 危险按钮
+.bf-button.bf-button-status-danger.is-ghost {
+  color: var(--bf-color-danger);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-danger.is-ghost:hover {
+  color: var(--bf-color-red-4);
+  border-color: var(--bf-color-red-4);
+  background-color: transparent;
+}
+.bf-button.bf-button-status-danger.is-ghost:active {
+  color: var(--bf-color-red-6);
+  border-color: var(--bf-color-red-6);
+  background-color: transparent;
+}
+
+// 文字类型
+.bf-button.bf-button-type-text.is-ghost:hover,
+.bf-button.bf-button-type-text.is-ghost:active {
+  border-color: transparent;
+}
 
 // ---------- size 控制按钮尺寸 ----------
 
@@ -208,7 +245,6 @@
   line-height: 14px;
   padding: 4px 10px;
 }
-
 // 大按钮
 .bf-button.bf-button-size-large {
   font-size: 16px;
@@ -216,64 +252,79 @@
   padding: 4px 22px;
 }
 
+// ---------- round 控制是否圆角 ----------
+
+// 圆角按钮
+.bf-button.is-round {
+  border-radius: 20px;
+}
+
+// ---------- round 控制是否圆形 ----------
+
+// 圆形按钮
+.bf-button.is-circle {
+  border-radius: 50%;
+}
+.bf-button.bf-button-size-small.is-circle {
+  padding: 4px;
+  width: 24px;
+}
+.bf-button.bf-button-size-default.is-circle {
+  padding: 4px;
+  width: 32px;
+}
+.bf-button.bf-button-size-large.is-circle {
+  padding: 4px;
+  width: 40px;
+}
 
 // ---------- disable 控制是否禁用 ----------
 
 // 禁用按钮
-.bf-button.is-disabled {
+.bf-button.is-disabled,
+.bf-button.is-disabled:hover,
+.bf-button.is-disabled:active {
   cursor: not-allowed;
+  color: var(--bf-color-disable) !important;
+  background-color: var(--bf-color-gray-4) !important;
 }
-
 .bf-button.bf-button-type-default.is-disabled,
 .bf-button.bf-button-type-outline.is-disabled,
-.bf-button.bf-button-type-dashed.is-disabled {
-  color: var(--bf-button-text-color-disabled);
-  background-color: var(--bf-button-bg-color-disabled);
-  border-color: var(--bf-button-border-color);
+.bf-button.bf-button-type-dashed.is-disabled,
+.bf-button.bf-button-type-text.is-disabled,
+.bf-button.bf-button-type-default.is-disabled:hover,
+.bf-button.bf-button-type-outline.is-disabled:hover,
+.bf-button.bf-button-type-dashed.is-disabled:hover,
+.bf-button.bf-button-type-text.is-disabled:hover,
+.bf-button.bf-button-type-default.is-disabled:active,
+.bf-button.bf-button-type-outline.is-disabled:active,
+.bf-button.bf-button-type-dashed.is-disabled:active,
+.bf-button.bf-button-type-text.is-disabled:active {
+  border-color: var(--bf-color-disable);
+  color: var(--bf-color-disable);
+  background-color: var(--bf-color-gray-4);
 }
 
+// 文字类型
 .bf-button.bf-button-type-text.is-disabled {
-  color: var(--bf-button-text-color-disabled);
+  border-color: transparent;
+}
+.bf-button.bf-button-type-text.is-disabled:hover,
+.bf-button.bf-button-type-text.is-disabled:active {
+  border-color: transparent;
 }
 
+// ---------- icon 图标按钮 ----------
 
-// ---------- ghost 幽灵按钮控制背景透明 ----------
-
-// 幽灵按钮
-.bf-button.is-ghost {
-  background-color: transparent;
-}
-
-// 主要按钮
-.bf-button.bf-button-status-primary.is-ghost,
-.bf-button.bf-button-status-primary.bf-button-type-dashed.is-ghost {
-  color: var(--bf-color-primary);
-}
-// 成功按钮
-.bf-button.bf-button-status-success.is-ghost,
-.bf-button.bf-button-status-success.bf-button-type-dashed.is-ghost {
-  color: var(--bf-color-success);
-}
-// 警告按钮
-.bf-button.bf-button-status-warning.is-ghost,
-.bf-button.bf-button-status-warning.bf-button-type-dashed.is-ghost {
-  color: var(--bf-color-warning);
-}
-// 危险按钮
-.bf-button.bf-button-status-danger.is-ghost,
-.bf-button.bf-button-status-danger.bf-button-type-dashed.is-ghost {
-  color: var(--bf-color-danger);
+.bf-button {
+  .bf-button_icon + .bf-button_text {
+    margin-left: 5px;
+  }
 }
 
-.bf-button.bf-button-status-primary.is-ghost:hover,
-.bf-button.bf-button-status-success.is-ghost:hover,
-.bf-button.bf-button-status-warning.is-ghost:hover,
-.bf-button.bf-button-status-danger.is-ghost:hover {
-  background-color: var(--bf-button-bg-color-hover);
-}
-.bf-button.bf-button-status-primary.is-ghost:active,
-.bf-button.bf-button-status-success.is-ghost:active,
-.bf-button.bf-button-status-warning.is-ghost:active,
-.bf-button.bf-button-status-danger.is-ghost:active {
-  background-color: var(--bf-button-bg-color-active);
+// ---------- block 按钮 ----------
+
+.bf-button.is-block {
+  width: 100%;
+  margin: 0;
 }

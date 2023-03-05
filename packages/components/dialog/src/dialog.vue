@@ -12,7 +12,7 @@
         </div>
         <div class="bf-dialog_footer">
           <bf-button>取消</bf-button>
-          <bf-button status="primary">确定</bf-button>
+          <bf-button status="normal">确定</bf-button>
         </div>
       </div>
     </div>

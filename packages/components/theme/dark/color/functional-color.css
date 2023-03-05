@@ -1,0 +1,21 @@
+@import url("./base-color.css");
+
+:root.dark {
+  --bf-color-default: var(--bf-color-gray-1);
+  --bf-color-normal: var(--bf-color-blue-6);
+  --bf-color-success: var(--bf-color-green-6);
+  --bf-color-warning: var(--bf-color-orange-5);
+  --bf-color-danger: var(--bf-color-red-5);
+  /* Hover */
+  --bf-color-default-hover: var(--bf-color-gray-3);
+  --bf-color-normal-hover: var(--bf-color-blue-5);
+  --bf-color-success-hover: var(--bf-color-green-5);
+  --bf-color-warning-hover: var(--bf-color-orange-4);
+  --bf-color-danger-hover: var(--bf-color-red-4);
+  /* Active */
+  --bf-color-default-active: var(--bf-color-gray-5);
+  --bf-color-normal-active: var(--bf-color-blue-7);
+  --bf-color-success-active: var(--bf-color-green-7);
+  --bf-color-warning-active: var(--bf-color-orange-6);
+  --bf-color-danger-active: var(--bf-color-red-6);
+}

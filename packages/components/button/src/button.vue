@@ -8,9 +8,11 @@
     `bf-button-size-${size}`,
     {
       'is-round': round,
+      'is-circle': circle,
       'is-disabled': disabled,
       'is-loading': buttonLoading,
       'is-ghost': ghost,
+      'is-block': block,
     },
   ]"
     :disabled="disabled"
@@ -30,13 +32,14 @@ import { BfIcon } from "@bf-teams/bfui-vue";
 const props = defineProps({
   status: { type: String, default: "default" },
   type: { type: String, default: "default" },
+  ghost: { type: Boolean, default: false },
   round: { type: Boolean, default: false },
+  circle: { type: Boolean, default: false },
   size: { type: String, default: "default" },
   disabled: { type: Boolean, default: false },
   icon: { type: String, default: "" },
   loading: { type: Boolean, default: false },
-  color: { type: String, default: "default" },
-  ghost: { type: Boolean, default: false },
+  block: { type: Boolean, default: false },
 })
 
 // data
@@ -47,7 +50,7 @@ const iconSpin = ref(false)
 // watch props
 watch(() => props.loading, (newVal) => {
   // console.log('传入的loading改变为：', newVal);
-  if(newVal) {
+  if (newVal) {
     buttonLoading.value = true
     buttonIcon.value = 'loading'
     iconSpin.value = true

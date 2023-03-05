@@ -163,9 +163,9 @@ const baseColorList = reactive([
       { id: 8, value: '#595959' },
       { id: 9, value: '#434343' },
       { id: 10, value: '#262626' },
-      { id: 10, value: '#1f1f1f' },
-      { id: 10, value: '#141414' },
-      { id: 10, value: '#000000' }
+      { id: 11, value: '#1f1f1f' },
+      { id: 12, value: '#141414' },
+      { id: 13, value: '#000000' }
     ]
   },
   {
@@ -188,8 +188,15 @@ const baseColorList = reactive([
 ])
 
 // methods
-const copyValue = (colorValue) => {
-  console.log(colorValue)
+const copyText = async (text: string) => {
+  try {
+    await navigator.clipboard.writeText(text)
+  } catch (err) {
+    console.log(err.name, err.message);
+  }
+}
+const copyValue = (colorValue: string) => {
+  copyText(colorValue)
 }
 </script>
 

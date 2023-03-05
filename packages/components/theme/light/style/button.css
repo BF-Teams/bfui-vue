@@ -1,13 +1,13 @@
+@import url("../color/base-color.css");
+@import url("../color/neutral-color.css");
+
 :root {
-  --bf-button-text-color: #606266;
   --bf-button-text-color-disabled: rgb(0 0 0 / 25%);
-  --bf-button-bg-color: #ffffff;
   --bf-button-bg-color-hover: rgb(0 0 0 / 4%);
   --bf-button-bg-color-active: rgb(0 0 0 / 8%);
-  --bf-button-bg-color-status-primary: #ecf5ff;
+  --bf-button-bg-color-status-normal: #ecf5ff;
   --bf-button-bg-color-status-success: #f0f9eb;
   --bf-button-bg-color-status-warning: #fdf6ec;
   --bf-button-bg-color-status-danger: #fef0f0;
-  --bf-button-bg-color-disabled: rgb(0 0 0 / 4%);
-  --bf-button-border-color: #d9d9d9;
+  /* --bf-button-bg-color-disabled: rgb(0 0 0 / 4%); */
 }

@@ -1,28 +1,28 @@
 <template>
-  <div>
-    <bf-button>默认按钮</bf-button>
-    <bf-button status="primary">主要按钮</bf-button>
-    <bf-button status="success">成功按钮</bf-button>
-    <bf-button status="warning">警告按钮</bf-button>
-    <bf-button status="danger">危险按钮</bf-button>
-    <br />
+  <div style="padding: 15px 10px 0; background: #262626; color: rgba(255, 255, 255, .85);">
     <bf-button ghost>幽灵按钮</bf-button>
-    <bf-button status="primary" ghost>幽灵按钮</bf-button>
+    <bf-button status="normal" ghost>幽灵按钮</bf-button>
     <bf-button status="success" ghost>幽灵按钮</bf-button>
     <bf-button status="warning" ghost>幽灵按钮</bf-button>
     <bf-button status="danger" ghost>幽灵按钮</bf-button>
     <br />
-    <bf-button type="dashed" ghost>幽灵按钮</bf-button>
-    <bf-button status="primary" type="dashed" ghost>幽灵按钮</bf-button>
-    <bf-button status="success" type="dashed" ghost>幽灵按钮</bf-button>
-    <bf-button status="warning" type="dashed" ghost>幽灵按钮</bf-button>
-    <bf-button status="danger" type="dashed" ghost>幽灵按钮</bf-button>
+    <bf-button type="dashed" ghost>描边类型</bf-button>
+    <bf-button status="normal" type="outline" ghost>描边类型</bf-button>
+    <bf-button status="success" type="outline" ghost>描边类型</bf-button>
+    <bf-button status="warning" type="outline" ghost>描边类型</bf-button>
+    <bf-button status="danger" type="outline" ghost>描边类型</bf-button>
     <br />
-    <bf-button type="text" ghost>幽灵按钮</bf-button>
-    <bf-button status="primary" type="text" ghost>幽灵按钮</bf-button>
-    <bf-button status="success" type="text" ghost>幽灵按钮</bf-button>
-    <bf-button status="warning" type="text" ghost>幽灵按钮</bf-button>
-    <bf-button status="danger" type="text" ghost>幽灵按钮</bf-button>
+    <bf-button type="dashed" ghost>虚线类型</bf-button>
+    <bf-button status="normal" type="dashed" ghost>虚线类型</bf-button>
+    <bf-button status="success" type="dashed" ghost>虚线类型</bf-button>
+    <bf-button status="warning" type="dashed" ghost>虚线类型</bf-button>
+    <bf-button status="danger" type="dashed" ghost>虚线类型</bf-button>
+    <br />
+    <bf-button type="text" ghost>文字类型</bf-button>
+    <bf-button status="normal" type="text" ghost>文字类型</bf-button>
+    <bf-button status="success" type="text" ghost>文字类型</bf-button>
+    <bf-button status="warning" type="text" ghost>文字类型</bf-button>
+    <bf-button status="danger" type="text" ghost>文字类型</bf-button>
   </div>
 </template>
 

@@ -82,7 +82,7 @@ export const sidebarZh: SidebarMulti = {
           text: '组件开发',
           collapsed: false,
           items: [
-            { text: '参与开发', link: '/zh/contribution/develop/' },
+            { text: '开发流程', link: '/zh/contribution/develop/' },
           ],
         },
         {

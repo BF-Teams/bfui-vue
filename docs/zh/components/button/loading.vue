@@ -1,7 +1,7 @@
 <template>
   <div>
-    <bf-button status="primary" icon="save" @click="onSave" :loading="loading">保存</bf-button>
-    {{ msg }}
+    <bf-button status="normal" icon="save" @click="onSave" :loading="loading">保存</bf-button>
+    <span style="padding-left: 10px;">{{ msg }}</span>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import { BfButton } from '@bf-teams/bfui-vue';
 
 // data
 const loading = ref(false)
-const msg = ref('(点击试试)')
+const msg = ref('点击试试')
 
 // methods
 const onSave = () => {
