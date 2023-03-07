@@ -1,56 +1,102 @@
 <template>
   <div>
-    <bf-overlay v-show="visible"></bf-overlay>
-    <div class="bf-dialog_wrap" v-show="visible">
-      <div class="bf-dialog">
-        <div class="bf-dialog_header">
-          <div class="bf-dialog_title">{{ title }}</div>
-          <bf-button icon="close" type="text" round></bf-button>
-        </div>
-        <div class="bf-dialog_body" :style="{ textAlign: center ? 'center' : 'left' }">
-          <div class="bf-dalog_content">确定跳转到文档首页？</div>
-        </div>
-        <div class="bf-dialog_footer">
-          <bf-button>取消</bf-button>
-          <bf-button status="normal">确定</bf-button>
+    <bf-overlay v-show="visible" :style="[{ zIndex: zIndex }]" @click.self="onClose"></bf-overlay>
+
+    <Transition name="bounce">
+      <div
+        class="bf-dialog_wrap"
+        v-if="visible"
+        :style="[{ zIndex: zIndex }]"
+        @click.self="onClose"
+      >
+        <div
+          class="bf-dialog"
+          :class="[
+      `bf-dialog-size-${size}`,
+    ]"
+          :style="[{ zIndex: zIndex }, { position: 'fixed' }, { top: top }]"
+        >
+          <div class="bf-dialog_layout">
+            <div class="bf-dialog_header">
+              <div class="header_left">
+                <bf-button
+                  @click="onClose"
+                  icon="close"
+                  type="text"
+                  circle
+                  style="width: 36px; height: 36px;"
+                ></bf-button>
+              </div>
+              <div class="header_center" :style="{ textAlign: center ? 'center' : 'left' }">
+                <div class="bf-dialog_title">{{ title }}</div>
+              </div>
+              <div class="header_right">
+                <slot name="headerRight"></slot>
+              </div>
+            </div>
+
+            <div class="bf-dialog_main">
+              <slot name="main"></slot>
+            </div>
+            <div class="bf-dialog_footer">
+              <slot name="footer"></slot>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import BfOverlay from '@bf-teams/bfui-vue/overlay'
-import BfButton from '@bf-teams/bfui-vue/button';
+<script setup lang="ts">
+import { watch } from 'vue';
+import { BfOverlay, BfButton } from '@bf-teams/bfui-vue';
 
-export default defineComponent({
-  name: "BfDialog",
-  components: {
-    BfOverlay,
-    BfButton,
+// props
+const props = defineProps({
+  visible: {
+    type: Boolean,
+    default: false,
   },
-  props: {
-    visible: {
-      type: Boolean,
-      default: false,
-    },
-    title: {
-      type: String,
-      default: "",
-    },
-    center: {
-      type: Boolean,
-      default: false,
-    },
+  title: {
+    type: String,
+    default: "",
   },
-  setup() {
-    // props, { emit }
-    // const onCancel = (context) => {
-    //   console.log('点击了取消按钮', context);
-    // };
+  center: {
+    type: Boolean,
+    default: false,
   },
-});
+  size: {
+    type: String,
+    default: "small",
+  },
+  zIndex: {
+    type: Number,
+    default: 100,
+  },
+  top: {
+    type: String,
+    default: "auto",
+  },
+})
+
+// watch props
+watch(() => props.visible, (newVal) => {
+  // console.log('传入的visible改变为：', newVal);
+  if (newVal) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+})
+
+// emit
+const emits = defineEmits(['update:visible'])
+
+// methods
+const onClose = () => {
+  emits('update:visible', false)
+}
 </script>
 
 <style lang="less" scoped>

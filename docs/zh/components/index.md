@@ -14,6 +14,6 @@
 
 - `数据展示`：Avator 头像，Table 表格，List 列表等。
 
-- `反馈组件`：Progress 进度条，Drawer 抽屉，[Dialog 对话框](./dialog/index.md)等。
+- `反馈组件`：[Overlay 遮罩层](./overlay/index.md)，[Dialog 对话框](./dialog/index.md)，Progress 进度条，Drawer 抽屉等。
 
 - `其他组件`：Progress，Drawer 抽屉等。

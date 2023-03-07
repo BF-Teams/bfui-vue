@@ -1,13 +1,13 @@
 @import url("./base-color.css");
 
 :root.dark {
-  --bf-color-default: var(--bf-color-gray-9);
+  --bf-color-default: var(--bf-color-gray-10);
   --bf-color-normal: var(--bf-color-blue-6);
   --bf-color-success: var(--bf-color-green-6);
   --bf-color-warning: var(--bf-color-orange-5);
   --bf-color-danger: var(--bf-color-red-5);
   /* Hover */
-  --bf-color-default-hover: var(--bf-color-gray-8);
+  --bf-color-default-hover: var(--bf-color-gray-9);
   --bf-color-normal-hover: var(--bf-color-blue-5);
   --bf-color-success-hover: var(--bf-color-green-5);
   --bf-color-warning-hover: var(--bf-color-orange-4);

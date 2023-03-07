@@ -56,7 +56,10 @@ export const sidebarZh: SidebarMulti = {
         {
           text: '反馈型',
           collapsed: false,
-          items: [{ text: 'Dialog 对话框', link: '/zh/components/dialog/' }],
+          items: [
+            { text: 'Overlay 遮罩层', link: '/zh/components/overlay/' },
+            { text: 'Dialog 对话框', link: '/zh/components/dialog/' },
+          ],
         },
         { text: '其他组件', collapsed: false },
       ],
@@ -81,9 +84,7 @@ export const sidebarZh: SidebarMulti = {
         {
           text: '组件开发',
           collapsed: false,
-          items: [
-            { text: '开发流程', link: '/zh/contribution/develop/' },
-          ],
+          items: [{ text: '开发流程', link: '/zh/contribution/develop/' }],
         },
         {
           text: '团队成员',

@@ -7,7 +7,7 @@
   --bf-color-warning: var(--bf-color-orange-5);
   --bf-color-danger: var(--bf-color-red-5);
   /* Hover */
-  --bf-color-default-hover: var(--bf-color-gray-3);
+  --bf-color-default-hover: var(--bf-color-gray-4);
   --bf-color-normal-hover: var(--bf-color-blue-5);
   --bf-color-success-hover: var(--bf-color-green-5);
   --bf-color-warning-hover: var(--bf-color-orange-4);

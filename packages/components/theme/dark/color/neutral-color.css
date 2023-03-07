@@ -3,7 +3,7 @@
   --bf-color-primary-text: rgba(255, 255, 255, 0.85);
   --bf-color-secondary-text: rgba(255, 255, 255, 0.45);
   --bf-color-disable: rgba(255, 255, 255, 0.30);
-  --bf-color-disable-background: var(--bf-color-gray-11);
+  --bf-color-disable-background: var(--bf-color-gray-9);
   --bf-color-border: rgba(255, 255, 255, 0.20);
   --bf-color-dividers: rgba(255, 255, 255, 0.12);
   --bf-color-background: rgba(255, 255, 255, 0.08);

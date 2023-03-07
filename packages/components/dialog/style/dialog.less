@@ -1,55 +1,122 @@
 .bf-dialog_wrap {
+  width: 100vw;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  // height: 100%;
+  align-items: center;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0px;
+  left: 0px;
 
   .bf-dialog {
-    background-color: white;
-    border-radius: 20px;
-    min-width: 300px;
-    max-width: 80vw;
+    background-color: var(--bf-dialog-background);
+    border: 1px solid var(--bf-color-border);
     max-height: 90vh;
+    max-width: 80vw;
+    overflow: hidden;
+    border-radius: 16px;
 
-    .bf-dialog_header {
-      // background-color: rgba(0, 255, 255, 0.363);
-      height: 50px;
-      padding: 0 20px;
+    .bf-dialog_layout {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: space-between;
-      border-bottom: 1px solid #f1f1f1;
-      box-sizing: border-box;
-      .bf-dialog_title {
-        color: var(--bf-text-color-normal);
-      }
-      .bf-button {
-        padding: 0;
-        width: 40px;
-        height: 40px;
-      }
-    }
 
-    .bf-dialog_body {
-      min-height: 100px;
-      max-height: calc(100vh - 180px);
-      padding: 14px 20px;
-      overflow: hidden auto;
-      // .bf-dalog_content {
-      //   height: 700px;
-      // }
-    }
+      .bf-dialog_header {
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 50px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--bf-color-dividers);
+        position: sticky;
+        top: 0px;
+        // backdrop-filter: blur(12px);
+        z-index: 2;
+        overflow: hidden;
+        .header_left {
+          min-width: 50px;
+        }
+        .header_center {
+          flex-shrink: 1;
+          flex-grow: 1;
+          width: calc(100% - 115px);
+          .bf-dialog_title {
+            line-height: 24px;
+            font-size: 20px;
+            font-weight: 700;
+            word-wrap: break-word;
+            padding-bottom: 2px;
+            padding-top: 2px;
+            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--bf-color-title);
+          }
+        }
+        .header_right {
+          min-width: 50px;
+        }
+      }
 
-    .bf-dialog_footer {
-      padding: 14px 20px;
-      text-align: right;
-      border-top: 1px solid #f1f1f1;
-      box-sizing: border-box;
+      .bf-dialog_main {
+        // background-color: rgb(162, 162, 255);
+        flex-grow: 1;
+        flex-shrink: 0;
+        min-height: 100px;
+        max-height: calc(100vh - 180px);
+        padding: 14px 20px;
+        overflow: hidden auto;
+        color: var(--bf-color-primary-text);
+      }
+
+      .bf-dialog_footer {
+        // background-color: pink;
+        padding: 8px 20px;
+        text-align: right;
+        border-top: 1px solid var(--bf-color-dividers);
+        box-sizing: border-box;
+        color: var(--bf-color-primary-text);
+      }
     }
+  }
+
+  // size-small
+  .bf-dialog.bf-dialog-size-small {
+    width: 450px;
+    max-width: calc(100vw - 32px);
+    // min-height: 200px;
+  }
+  // size-medium
+  .bf-dialog.bf-dialog-size-medium {
+    width: 600px;
+    // min-height: 300px;
+  }
+  // size-large
+  .bf-dialog.bf-dialog-size-large {
+    width: 80vw;
+  }
+}
+
+
+// 动画弹跳
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.2s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
   }
 }

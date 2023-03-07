@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits, watch, ref } from "vue"
+import { ref, watch } from "vue"
 import { BfIcon } from "@bf-teams/bfui-vue";
 
 // props
@@ -63,6 +63,7 @@ watch(() => props.loading, (newVal) => {
 
 // emit
 const emit = defineEmits(['click'])
+
 // methods
 const onClick = () => {
   emit('click')
