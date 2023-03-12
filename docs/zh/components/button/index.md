@@ -37,10 +37,6 @@ import Custom from './custom.vue'
 
 </div>
 
-::: tip 提示
-若与 `color` 属性同时存在，`status` 属性会失效。
-:::
-
 ### 按钮类型(type)
 
 使用 type 来定义按钮的类型，对应不同的边框样式。
@@ -135,25 +131,6 @@ import Custom from './custom.vue'
 
 </div>
 
-::: danger 请注意，禁用按钮上的点击事件也可能被恶意触发！
-例如，点击禁用下方按钮，然后打开浏览器开发者工具，选中页面下方“点击执行”按钮，将该 button 按钮元素节点的 `disabled` 属性手动删除。
-
-打开控制台，你会发现虽然该按钮的样式在视觉上依然是禁用按钮，但此时点击却能执行按钮上所绑定的点击事件，在控制台会打印出“执行成功！”这几个字。
-
-因此，在实际开发中，按钮所绑定的函数执行时一定要在前端或后端再次判断用户权限，确认无误后再执行对应的业务逻辑，防止被恶意造成无法逆转的损失。
-
-此案例来自 [百里飞洋](https://github.com/Barry-Flynn)，留言于 2023.03.05
-:::
-
-<div class="demo-block">
-
-<DisabledTest />
-
-::: details 查看代码
-<<< @/zh/components/button/disabledTest.vue
-:::
-
-</div>
 
 ### 图标按钮(icon)
 

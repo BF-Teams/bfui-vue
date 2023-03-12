@@ -1,6 +1,6 @@
 <template>
   <button
-    @click="onClick"
+    @click="onClick()"
     class="bf-button"
     :class="[
     `bf-button-status-${status}`,
@@ -48,9 +48,9 @@ const buttonLoading = ref(props.loading)
 const iconSpin = ref(false)
 
 // watch props
-watch(() => props.loading, (newVal) => {
-  // console.log('传入的loading改变为：', newVal);
-  if (newVal) {
+watch(() => props.loading, (isLoading) => {
+  // 当传入的 loading 值为 true 时，修改为加载图标并旋转
+  if (isLoading) {
     buttonLoading.value = true
     buttonIcon.value = 'loading'
     iconSpin.value = true
@@ -66,7 +66,10 @@ const emit = defineEmits(['click'])
 
 // methods
 const onClick = () => {
-  emit('click')
+  // 当按钮处于非禁用状态时，才抛出点击事件
+  if (!props.disabled) {
+    emit('click')
+  }
 }
 </script>
 

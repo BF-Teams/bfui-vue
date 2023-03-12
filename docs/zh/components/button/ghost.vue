@@ -6,7 +6,7 @@
     <bf-button status="warning" ghost>幽灵按钮</bf-button>
     <bf-button status="danger" ghost>幽灵按钮</bf-button>
     <br />
-    <bf-button type="dashed" ghost>描边类型</bf-button>
+    <bf-button type="outline" ghost>描边类型</bf-button>
     <bf-button status="normal" type="outline" ghost>描边类型</bf-button>
     <bf-button status="success" type="outline" ghost>描边类型</bf-button>
     <bf-button status="warning" type="outline" ghost>描边类型</bf-button>

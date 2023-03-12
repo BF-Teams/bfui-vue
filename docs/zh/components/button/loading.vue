@@ -15,15 +15,16 @@ const msg = ref('点击试试')
 
 // methods
 const onSave = () => {
-  // console.log('正在保存…')
-  msg.value = '正在保存…'
-  loading.value = true
-  setTimeout(
-    function() {
-      // console.log('保存成功！')
-      msg.value = '保存成功！'
-      loading.value = false
-    }, 3000
-  )
+  // 当非加载状态时才会执行相关代码，防止用户频繁点击
+  if (!loading.value) {
+    msg.value = '正在保存…'
+    loading.value = true
+    setTimeout(
+      function () {
+        msg.value = '保存成功！'
+        loading.value = false
+      }, 3000
+    )
+  }
 }
 </script>
