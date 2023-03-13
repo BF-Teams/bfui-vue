@@ -1,8 +1,8 @@
 <template>
   <div>
-    <bf-button status="normal" @click="showDialog">顶部距离</bf-button>
+    <bf-button status="normal" @click="showDialog">背景模糊</bf-button>
 
-    <bf-dialog v-model:visible="visible" title="标题" :z-index="100" top="10vh">
+    <bf-dialog v-model:visible="visible" title="标题" :z-index="100" :blur="2">
       <template v-slot:main> 主体内容 </template>
 
       <template v-slot:footer>

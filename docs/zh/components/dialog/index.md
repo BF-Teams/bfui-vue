@@ -6,6 +6,7 @@
 import TitleCenter from './center.vue'
 import Size from './size.vue'
 import Top from './top.vue'
+import Blur from './blur.vue'
 import Slots from './slots.vue'
 </script>
 
@@ -45,7 +46,7 @@ import Slots from './slots.vue'
 
 </div>
 
-### 顶部距离
+### 顶部距离(top)
 
 如果感到对话框默认的居中位置有些偏下（尤其是对于 `size="small"` 类型的），这时可以使用 `top` 设置对话框距离页面顶部的距离，比如 `4vh`、`30px` 等。
 
@@ -59,7 +60,21 @@ import Slots from './slots.vue'
 
 </div>
 
-### 使用具名插槽
+### 背景模糊(blur)
+
+通过 blur 属性设置遮罩层背景滤镜的模糊度(单位是 px)，默认值为 `0`，即不模糊。
+
+<div class="demo-block">
+
+<Blur />
+
+::: details 查看代码
+<<< @/zh/components/overlay/blur.vue
+:::
+
+</div>
+
+### 使用插槽(slot)
 
 通过使用具名插槽可以自定义对话框内容和样式。
 

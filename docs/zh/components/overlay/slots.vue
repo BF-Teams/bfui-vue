@@ -12,7 +12,11 @@
     </bf-overlay>
 
     <bf-overlay v-model:visible="visible2" :z-index="100" @click.self="hideOverlay2">
-      <div style="padding: 20px; background: white; color: black;">通过默认插槽嵌入任意内容</div>
+      <template #default>
+        <div style="padding: 20px; background: white; color: black;">
+          通过 default 插槽嵌入任意内容，自行定义样式
+        </div>
+      </template>
     </bf-overlay>
   </div>
 </template>

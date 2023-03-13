@@ -1,6 +1,6 @@
 <template>
   <button
-    @click="onClick()"
+    @click="onClick"
     class="bf-button"
     :class="[
     `bf-button-status-${status}`,

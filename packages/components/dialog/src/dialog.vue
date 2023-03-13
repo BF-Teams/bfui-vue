@@ -1,6 +1,11 @@
 <template>
   <div>
-    <bf-overlay v-show="visible" :style="[{ zIndex: zIndex }]" @click.self="onClose"></bf-overlay>
+    <bf-overlay
+      v-show="visible"
+      :style="[{ zIndex: zIndex }]"
+      @click.self="onClose"
+      :blur="blur"
+    ></bf-overlay>
 
     <Transition name="bounce">
       <div
@@ -77,6 +82,10 @@ const props = defineProps({
   top: {
     type: String,
     default: "auto",
+  },
+  blur: {
+    type: Number,
+    default: 0,
   },
 })
 

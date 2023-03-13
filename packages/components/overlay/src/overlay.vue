@@ -1,6 +1,10 @@
 <template>
   <Transition name="fade">
-    <div class="bf-overlay" v-show="visible" :style="[{ zIndex: zIndex }]">
+    <div
+      class="bf-overlay"
+      v-show="visible"
+      :style="[{ backdropFilter: 'blur(' + blur + 'px)' }, { zIndex: zIndex }]"
+    >
       <slot></slot>
       <div class="center-content" v-if="$slots.center">
         <slot name="center"></slot>
@@ -16,6 +20,10 @@ const props = defineProps({
   visible: {
     type: Boolean,
     default: false,
+  },
+  blur: {
+    type: Number,
+    default: 0,
   },
   zIndex: {
     type: Number,
