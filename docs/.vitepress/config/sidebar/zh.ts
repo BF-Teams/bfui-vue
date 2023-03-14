@@ -79,6 +79,7 @@ export const sidebarZh: SidebarMulti = {
             { text: 'Fonts 字体', link: '/zh/contribution/design/fonts/' },
             { text: 'Layout 布局', link: '/zh/contribution/design/layout/' },
             { text: 'Motion 动效', link: '/zh/contribution/design/motion/' },
+            { text: 'Theme 主题', link: '/zh/contribution/design/theme/' },
           ],
         },
         {

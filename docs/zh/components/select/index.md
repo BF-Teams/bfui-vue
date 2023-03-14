@@ -1,6 +1,6 @@
 # Select 选择器
 
-用于从一组相关联的数据集合中进行选择。
+下拉选择器用于展示一组相关联的数据选项集合，用户可以从中选择内容。
 
 <script setup>
 import Size from './size.vue'

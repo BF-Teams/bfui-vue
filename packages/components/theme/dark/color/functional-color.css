@@ -1,5 +1,3 @@
-@import url("./base-color.css");
-
 :root.dark {
   --bf-color-default: var(--bf-color-gray-10);
   --bf-color-normal: var(--bf-color-blue-6);
