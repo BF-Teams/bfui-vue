@@ -83,7 +83,7 @@ import { BfButton } from '@bf-teams/bfui-vue';
   background: linear-gradient( -45deg, #8eff61, #47caff );
 }
 
-.btn5 {
+.bf-button.btn5 {
   width: 300px;
   height: 50px;
   border-radius: 25px;
@@ -92,7 +92,7 @@ import { BfButton } from '@bf-teams/bfui-vue';
   text-indent: 20px;
 }
 
-.btn6 {
+.bf-button.btn6 {
   position: relative;
   font-size: 24px;
   font-weight: bold;

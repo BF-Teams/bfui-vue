@@ -45,7 +45,13 @@ export const sidebarZh: SidebarMulti = {
             { text: 'Icon 图标', link: '/zh/components/icon/' },
           ],
         },
-        { text: '布局型', collapsed: false },
+        {
+          text: '布局型',
+          collapsed: false,
+          items: [
+            { text: 'Grid 栅格', link: '/zh/components/grid/' },
+          ],
+        },
         { text: '导航型', collapsed: false },
         {
           text: '数据录入型',

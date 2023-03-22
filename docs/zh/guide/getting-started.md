@@ -15,7 +15,7 @@ import '@bf-teams/bfui-vue/theme'; // 全局引入BFUI主题
 
 ## 按需引入
 
-以 Button 组建为例，具体组件的引入可查看相应组件演示代码：
+以 Button 组件为例，具体组件的引入可查看相应组件演示代码：
 
 ```vue
 <script setup lang="ts">

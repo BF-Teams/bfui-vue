@@ -24,18 +24,16 @@ import Size from './size.vue'
 
 </div>
 
-
-
 ## API
 
 ### Select Props
 
-| 属性 Props     | 说明                      | 类型 Type | 默认值 Default |
+| 属性 Attribute | 说明 Description          | 类型 Type | 默认值 Default |
 | -------------- | ------------------------- | --------- | -------------- |
 | **size**       | 选择器尺寸                | String    | `default`      |
 | **width**      | 选择器宽度                | String    | `260px`        |
 | **height**     | 选择器高度                | String    | `30px`         |
-| **options**    | 选择器                    | Array   | `[]`        |
-| **labelFiled** | 默认需要显示的 label 字段 | String   | `label`        |
-| **valueFiled** | 默认需要显示的 value 字段 | String   | `value`        |
+| **options**    | 选择器                    | Array     | `[]`           |
+| **labelFiled** | 默认需要显示的 label 字段 | String    | `label`        |
+| **valueFiled** | 默认需要显示的 value 字段 | String    | `value`        |
 | **multiple**   | 是否多选                  | Boolean   | `false`        |

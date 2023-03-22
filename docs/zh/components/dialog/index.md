@@ -96,17 +96,17 @@ import Slots from './slots.vue'
 
 ### Dialog Props
 
-| 属性 Props  | 说明                 | 类型    | 默认值  |
-| ----------- | -------------------- | ------- | ------- |
-| **visible** | 控制对话框是否显示   | Boolean | `false` |
-| **title**   | 对话框标题           | String  | -       |
-| **center**  | 对话框标题是否居中   | Boolean | `false` |
-| **z-index** | 对话框层级           | Number  | 100     |
-| **top**     | 对话框距离顶部的距离 | String  | -       |
+| 属性 Attribute | 说明 Description     | 类型 Type | 默认值 Default |
+| -------------- | -------------------- | --------- | -------------- |
+| **visible**    | 控制对话框是否显示   | Boolean   | `false`        |
+| **title**      | 对话框标题           | String    | -              |
+| **center**     | 对话框标题是否居中   | Boolean   | `false`        |
+| **z-index**    | 对话框层级           | Number    | 100            |
+| **top**        | 对话框距离顶部的距离 | String    | -              |
 
 ### Dialog Slots
 
-| 插槽 Slots      | 说明               |
+| 插槽 Slot       | 说明 Description   |
 | --------------- | ------------------ |
 | **headerRight** | 自定义头部右侧区域 |
 | **main**        | 自定义对话框内容   |

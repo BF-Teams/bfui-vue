@@ -5,7 +5,7 @@ const members = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/81922999?v=4',
     name: '张洪浩',
-    title: 'Creator',
+    title: 'Founder',
     org: 'BF-Teams',
     orgLink: 'https://github.com/BF-Teams/',
     desc: '技术架构、文档维护和组件开发',

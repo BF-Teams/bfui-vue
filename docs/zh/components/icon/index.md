@@ -23,7 +23,6 @@ import Spin from './spin.vue'
 
 </div>
 
-
 ### 是否旋转(spin)
 
 使用 spin 来定义图标是否自旋转。
@@ -38,20 +37,17 @@ import Spin from './spin.vue'
 
 </div>
 
-
-## 全部图标
+## 图标列表
 
 ::: tip
 常用图标库正在完善挑选中，稍后发布所收录的全部图标名称，尽请期待~
 :::
 
-
-
 ## API
 
 ### Icon Props
 
-| 属性 Props | 说明       | 类型 Type | 默认值 Default |
-| ---------- | ---------- | --------- | -------------- |
-| **name**   | 图标名称   | String    | -              |
-| **spin**   | 是否自旋转 | Boolean   | `false`        |
+| 属性 Attribute | 说明 Description | 类型 Type | 默认值 Default |
+| -------------- | ---------------- | --------- | -------------- |
+| **name**       | 图标名称         | String    | -              |
+| **spin**       | 是否自旋转       | Boolean   | `false`        |

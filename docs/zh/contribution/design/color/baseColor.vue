@@ -202,8 +202,8 @@ const copyValue = (colorValue: string) => {
 
 <style lang="less" scoped>
 .card {
-  border: 1px solid #f1f1f1;
-  border-radius: 10px;
+  border: 1px solid var(--bf-color-border);
+  border-radius: 10px 10px 0 0;
   display: inline-block;
   width: 31%;
   margin: 20px 1%;

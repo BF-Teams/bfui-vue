@@ -86,14 +86,14 @@ import Slots from './slots.vue'
 
 ### Overlay Props
 
-| 属性 Props  | 说明                        | 类型    | 默认值  |
-| ----------- | --------------------------- | ------- | ------- |
-| **visible** | 控制遮罩层是否显示          | Boolean | `false` |
-| **blur**    | 设置遮罩层模糊度，单位是 px | Number  | `0`     |
+| 属性 Attribute | 说明 Description            | 类型 Type | 默认值 Default |
+| -------------- | --------------------------- | --------- | -------------- |
+| **visible**    | 控制遮罩层是否显示          | Boolean   | `false`        |
+| **blur**       | 设置遮罩层模糊度，单位是 px | Number    | `0`            |
 
 ### Overlay Slots
 
-| 插槽 Slots  | 说明                           |
+| 插槽 Slot   | 说明 Description               |
 | ----------- | ------------------------------ |
 | **center**  | 嵌入的元素自动居中             |
 | **default** | 默认插槽，用于自定义元素和样式 |
