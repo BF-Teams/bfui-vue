@@ -1,16 +1,20 @@
 <template>
-  <div class="bf-col" :class="colClass">
+  <div class="bf-col" :class="colClass" :style="colStyle">
     <slot></slot>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, inject } from 'vue';
+import type { CSSProperties } from 'vue';
 
 // props
 const props = defineProps({
   span: { type: Number },
 })
+
+// inject
+const gutter = Number(inject('gutter'))
 
 // computed
 const colClass = computed(() => {
@@ -21,6 +25,16 @@ const colClass = computed(() => {
   }
 
   return classes
+})
+
+const colStyle = computed(() => {
+  const styles: CSSProperties = {}
+  // 注意 JavaScript 中数字 0 也等于 false
+  if (gutter) {
+    styles.paddingLeft = styles.paddingRight = `${gutter / 2}px`
+  }
+
+  return styles
 })
 </script>
 

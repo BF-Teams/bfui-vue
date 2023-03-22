@@ -55,12 +55,14 @@ import { BfRow, BfCol } from '@bf-teams/bfui-vue';
   text-align: center;
   color: white;
 }
+
 // 奇数项
-.bf-col:nth-child(odd){
+.bf-col:nth-child(odd) {
   background-color: #1677ff;
 }
+
 // 偶数项
-.bf-col:nth-child(even){
+.bf-col:nth-child(even) {
   background-color: #69b1ff;
 }
 </style>

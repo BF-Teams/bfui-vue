@@ -7,6 +7,7 @@
 <script setup>
 import Basic from './basic.vue'
 import Span from './span.vue'
+import Gutter from './gutter.vue'
 </script>
 
 ## 代码示例
@@ -26,7 +27,6 @@ import Span from './span.vue'
 :::
 
 </div>
-
 
 ### 占位格数(span)
 
@@ -48,11 +48,32 @@ import Span from './span.vue'
 
 </div>
 
+### 区块间隔(gutter)
+
+通过在 `Row` 上的 gutter 属性可以设置栅格之间的区域间隔(单位 px)，其默认值为 0。
+
+我们推荐使用 `8n` 作为栅格间隔的值(n 是自然数)，选择其他值时也尽量保持值为偶数。
+
+<div class="demo-block">
+
+<Gutter />
+
+::: details 查看代码
+<<< @/zh/components/grid/gutter.vue
+:::
+
+</div>
 
 ## API
 
+### Row Props
+
+| 属性 Attribute | 说明 Description | 类型 Type | 默认值 Default |
+| -------------- | ---------------- | --------- | -------------- |
+| **gutter**     | 栅格间隔         | Number    | 0              |
+
 ### Col Props
 
-| 属性 Attribute | 说明 Description                            | 类型 Type | 默认值 Default |
-| -------------- | ------------------------------------------- | --------- | -------------- |
+| 属性 Attribute | 说明 Description                             | 类型 Type | 默认值 Default |
+| -------------- | -------------------------------------------- | --------- | -------------- |
 | **span**       | 栅格占位格数，为 0 时相当于 `display: none;` | Number    | -              |
