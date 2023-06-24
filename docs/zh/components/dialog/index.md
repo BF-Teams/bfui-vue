@@ -69,7 +69,7 @@ import Slots from './slots.vue'
 <Blur />
 
 ::: details 查看代码
-<<< @/zh/components/overlay/blur.vue
+<<< @/zh/components/dialog/blur.vue
 :::
 
 </div>
