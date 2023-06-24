@@ -1,14 +1,14 @@
 # Button 按钮
 
-常用的操作按钮。
+按钮用于开启一个闭环的操作任务，如“删除”对象、“购买”商品等。
 
 <script setup>
 import Status from './status.vue'
-import Ghost from './ghost.vue'
 import Type from './type.vue'
+import Ghost from './ghost.vue'
+import Size from './size.vue'
 import Round from './round.vue'
 import Circle from './circle.vue'
-import Size from './size.vue'
 import Disabled from './disabled.vue'
 import Icon from './icon.vue'
 import Loading from './loading.vue'
@@ -31,7 +31,7 @@ import Custom from './custom.vue'
 <Status />
 
 ::: details 查看代码
-<<< @/zh/components/button/status.vue{3-7,12}
+<<< @/zh/components/button/status.vue{3-7}
 :::
 
 </div>
@@ -49,7 +49,7 @@ import Custom from './custom.vue'
 <Type />
 
 ::: details 查看代码
-<<< @/zh/components/button/type.vue{3-7,9-13,15-19,21-25,30}
+<<< @/zh/components/button/type.vue{3-7,9-13,15-19,21-25}
 :::
 
 </div>
@@ -65,7 +65,7 @@ import Custom from './custom.vue'
 <Ghost />
 
 ::: details 查看代码
-<<< @/zh/components/button/ghost.vue
+<<< @/zh/components/button/ghost.vue{3-7,9-13,15-19,21-25}
 :::
 
 </div>
@@ -81,7 +81,7 @@ import Custom from './custom.vue'
 <Size />
 
 ::: details 查看代码
-<<< @/zh/components/button/size.vue
+<<< @/zh/components/button/size.vue{3-6,8-11,13-16}
 :::
 
 </div>
@@ -95,7 +95,7 @@ import Custom from './custom.vue'
 <Round />
 
 ::: details 查看代码
-<<< @/zh/components/button/round.vue
+<<< @/zh/components/button/round.vue{3-7,9-13,15-19,21-25,27-31}
 :::
 
 </div>
@@ -104,14 +104,14 @@ import Custom from './custom.vue'
 
 使用 circle 来定义设置按钮是否为圆形，常用于图标按钮或单字符按钮。
 
-注意 round 与 circle 的不同之处，前者并不是正圆形。
+注意 round 与 circle 的不同之处，前者只是圆角，后者才是正圆形。
 
 <div class="demo-block">
 
 <Circle />
 
 ::: details 查看代码
-<<< @/zh/components/button/circle.vue
+<<< @/zh/components/button/circle.vue{3-7,9-13}
 :::
 
 </div>
@@ -125,7 +125,7 @@ import Custom from './custom.vue'
 <Disabled />
 
 ::: details 查看代码
-<<< @/zh/components/button/disabled.vue
+<<< @/zh/components/button/disabled.vue{3-13,15-25,27-37,39-49}
 :::
 
 </div>
@@ -142,7 +142,7 @@ import Custom from './custom.vue'
 <Icon />
 
 ::: details 查看代码
-<<< @/zh/components/button/icon.vue
+<<< @/zh/components/button/icon.vue{4-16,19-47,50-54,57-59}
 :::
 
 </div>

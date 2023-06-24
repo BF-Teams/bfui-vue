@@ -39,7 +39,7 @@ const visible = ref(true)
 
 // methods
 const showDialog = () => {
-  visible.value = true
+  visible.value = false
 }
 </script>
 

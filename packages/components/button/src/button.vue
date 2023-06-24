@@ -24,9 +24,15 @@
   </button>
 </template>
 
+<script lang="ts">
+export default {
+  name: 'BfButton',
+};
+</script>
+
 <script setup lang="ts">
 import { ref, watch } from "vue"
-import { BfIcon } from "@bf-teams/bfui-vue";
+import BfIcon from "@bf-teams/bfui-vue/icon";
 
 // props
 const props = defineProps({

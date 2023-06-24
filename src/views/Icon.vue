@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { BfIcon } from '@bf-teams/bfui-vue';
+import BfIcon from '@bf-teams/bfui-vue/icon';
 </script>
 
 <style lang="less" scoped>

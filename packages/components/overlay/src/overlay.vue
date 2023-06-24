@@ -12,6 +12,12 @@
   ></Transition>
 </template>
 
+<script lang="ts">
+export default {
+  name: 'BfOverlay',
+};
+</script>
+
 <script setup lang="ts">
 import { watch } from 'vue';
 

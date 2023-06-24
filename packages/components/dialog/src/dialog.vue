@@ -53,9 +53,14 @@
   </div>
 </template>
 
+<script lang="ts">
+export default {
+  name: 'BfDialog',
+};
+</script>
+
 <script setup lang="ts">
 import { watch } from 'vue';
-import { BfOverlay, BfButton } from '@bf-teams/bfui-vue';
 
 // props
 const props = defineProps({

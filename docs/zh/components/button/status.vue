@@ -7,7 +7,3 @@
     <bf-button status="danger">危险按钮</bf-button>
   </div>
 </template>
-
-<script setup lang="ts">
-import { BfButton } from '@bf-teams/bfui-vue';
-</script>

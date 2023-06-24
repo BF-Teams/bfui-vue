@@ -26,12 +26,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { BfButton } from '@bf-teams/bfui-vue';
-</script>
-
 <style lang="less" scoped>
 .bf-button {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 </style>

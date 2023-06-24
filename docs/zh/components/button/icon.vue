@@ -14,7 +14,7 @@
     <bf-button status="normal" round><bf-icon name="bell"></bf-icon></bf-button>
     <bf-button status="normal" type="outline" round><bf-icon name="bell"></bf-icon></bf-button>
     <bf-button type="text" round><bf-icon name="bell"></bf-icon></bf-button>
-    <br />
+    <hr />
     <div style="margin: 10px 0;">图标在文字前面（使用 Button 组件的 icon 属性）：</div>
     <bf-button icon="setting">默认按钮</bf-button>
     <bf-button icon="loading" status="normal">加载</bf-button>
@@ -45,14 +45,14 @@
     <bf-button icon="bell" disabled>禁用</bf-button>
     <bf-button icon="experiment" disabled>禁用</bf-button>
     <bf-button icon="delete" disabled>禁用</bf-button>
-    <br />
+    <hr />
     <div style="margin: 10px 0;">图标在文字后面（在 Button 中直接放置 Icon 组件）：</div>
     <bf-button>设置 <bf-icon name="setting"></bf-icon></bf-button>
     <bf-button status="normal">加载 <bf-icon name="loading"></bf-icon></bf-button>
     <bf-button status="success">订阅 <bf-icon name="bell"></bf-icon></bf-button>
     <bf-button status="warning">实验 <bf-icon name="experiment"></bf-icon></bf-button>
     <bf-button status="danger">删除 <bf-icon name="delete"></bf-icon></bf-button>
-    <br />
+    <hr />
     <div style="margin: 10px 0;">两种方法结合，可以自定义文字前后图标的显示：</div>
     <bf-button icon="setting">展开</bf-button>
     <bf-button icon="setting">展开 <bf-icon name="unfold"></bf-icon></bf-button>
@@ -60,12 +60,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { BfButton, BfIcon } from '@bf-teams/bfui-vue';
-</script>
-
 <style lang="less" scoped>
 .bf-button {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 </style>

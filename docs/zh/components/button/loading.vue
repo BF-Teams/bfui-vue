@@ -7,7 +7,6 @@
 
 <script setup lang="ts">
 import { ref } from "vue"
-import { BfButton } from '@bf-teams/bfui-vue';
 
 // data
 const loading = ref(false)

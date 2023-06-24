@@ -4,6 +4,12 @@
   </div>
 </template>
 
+<script lang="ts">
+export default {
+  name: 'BfRow',
+};
+</script>
+
 <script setup lang="ts">
 import { computed, provide } from 'vue';
 import type { CSSProperties } from 'vue';

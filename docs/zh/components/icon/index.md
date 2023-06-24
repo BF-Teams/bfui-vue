@@ -1,6 +1,6 @@
 # Icon 图标
 
-一套常用的图标集合。
+Icon 作为UI构成中重要的元素，一定程度上影响UI界面整体呈现出的风格。
 
 <script setup>
 import Name from './name.vue'

@@ -17,21 +17,16 @@
       </div>
       <div class="form-btn">
         <bf-button status="normal" size="large" round block>登录</bf-button>
-        <!-- <bf-button size="large" round block>注册</bf-button> -->
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-import { BfButton } from '@bf-teams/bfui-vue';
-</script>
-
 <style lang="less" scoped>
 .form-wrap {
   max-width: 350px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(185, 185, 185, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   .form-title {

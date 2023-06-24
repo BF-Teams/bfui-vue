@@ -77,8 +77,6 @@
 </template>
 
 <script setup lang="ts">
-import { BfButton, BfIcon } from '@bf-teams/bfui-vue';
-
 // methods
 const onClick = () => {
   console.log('您点击了按钮')

@@ -8,7 +8,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { BfIcon } from '@bf-teams/bfui-vue';
-</script>

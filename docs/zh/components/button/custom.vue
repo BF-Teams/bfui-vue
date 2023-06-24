@@ -61,10 +61,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { BfButton } from '@bf-teams/bfui-vue';
-</script>
-
 <style lang="less" scoped>
 .btn1 {
   background-color: #ff668f !important;

@@ -4,6 +4,12 @@
   </svg>
 </template>
 
+<script lang="ts">
+export default {
+  name: 'BfIcon',
+};
+</script>
+
 <script setup lang="ts">
 // props
 defineProps({
