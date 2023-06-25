@@ -17,7 +17,7 @@
   ]"
     :disabled="disabled"
   >
-    <bf-icon class="bf-button_icon" v-if="buttonIcon" :name="buttonIcon" :spin="iconSpin" />
+    <bf-icons class="bf-button_icon" v-if="buttonIcon" :name="buttonIcon" :spin="iconSpin" />
     <span class="bf-button_text" v-if="$slots.default">
       <slot></slot>
     </span>
@@ -32,7 +32,7 @@ export default {
 
 <script setup lang="ts">
 import { ref, watch } from "vue"
-import BfIcon from "@bf-teams/bfui-vue/icon";
+import BfIcons from "@bf-teams/bfui-vue/icon";
 
 // props
 const props = defineProps({

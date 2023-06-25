@@ -1,8 +1,8 @@
 import type { App } from 'vue';
-import BfIcon from './src/icon.vue';
+import BfIcons from './src/icon.vue';
 
-BfIcon.install = (app: App) => {
-  app.component(BfIcon.name, BfIcon);
+BfIcons.install = (app: App) => {
+  app.component(BfIcons.name, BfIcons);
 };
 
-export default BfIcon;
+export default BfIcons;

@@ -17,6 +17,7 @@
     "docs:preview": "vitepress preview docs --port 8592"
   },
   "dependencies": {
+    "@icon-park/vue-next": "^1.4.2",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

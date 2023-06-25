@@ -3,20 +3,23 @@
     <h2>Icon组件运行测试</h2>
     <br />
 
-    <bf-icon name="setting" />
-    <bf-icon name="experiment" />
-    <bf-icon name="bell" />
-    <bf-icon name="loading" />
+    <bf-icons name="setting" />
+    <bf-icons name="experiment" />
+    <bf-icons name="bell" />
+    <bf-icons name="loading" />
     <br />
-    <bf-icon name="setting" spin />
-    <bf-icon name="experiment" spin />
-    <bf-icon name="bell" spin />
-    <bf-icon name="loading" spin />
+    <bf-icons name="setting" spin />
+    <bf-icons name="experiment" spin />
+    <bf-icons name="bell" spin />
+    <bf-icons name="loading" spin />
+
+    <bf-icon type="MessageEmoji" />
+    <bf-icon type="message-emoji" />
   </div>
 </template>
 
 <script setup lang="ts">
-import BfIcon from '@bf-teams/bfui-vue/icon';
+import BfIcons from '@bf-teams/bfui-vue/icon';
 </script>
 
 <style lang="less" scoped>
