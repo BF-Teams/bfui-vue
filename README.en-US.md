@@ -16,7 +16,7 @@ A front-end UI component library suitable for Vue 3. x
     <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
   </a>
 
-  <img alt="visitors" src="https://visitor-badge.laobi.icu/badge?page_id=bfui-vue.readme&left_text=浏览量%20Visitors" />
+  <img alt="visitors" src="https://visitor-badge.laobi.icu/badge?page_id=bfui-vue.readme&left_text=%E6%B5%8F%E8%A7%88%E9%87%8F%20Visitors" />
 
 </div>
 
