@@ -21,7 +21,7 @@ export type SidebarItem = {
 export const sidebarEn: SidebarMulti = {
   '/en/guide/': [
     {
-      text: 'Start',
+      text: 'Guide',
       items: [
         { text: 'What is BFUI?', link: './index' },
         { text: 'Installation', link: './installation' },

@@ -1,4 +1,4 @@
-# 更新日志
+# Changelog
 
 `BFUI` strictly follows the [SemVer](https://semver.org/) semantic versioning specification.
 

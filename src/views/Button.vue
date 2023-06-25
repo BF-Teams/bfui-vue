@@ -77,6 +77,14 @@
 </template>
 
 <script setup lang="ts">
+// 通过模块化的方式导入
+// import { BfButton } from '@bf-teams/bfui-vue';
+// import { BfIcon } from '@bf-teams/bfui-vue';
+
+// 或者直接通过组件的路径导入
+// import BfButton from '@bf-teams/bfui-vue/button'
+// import BfIcon from '@bf-teams/bfui-vue/icon'
+
 // methods
 const onClick = () => {
   console.log('您点击了按钮')

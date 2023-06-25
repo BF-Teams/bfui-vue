@@ -21,11 +21,12 @@ export type SidebarItem = {
 export const sidebarZh: SidebarMulti = {
   '/zh/guide/': [
     {
-      text: '开始',
+      text: '指南',
       items: [
         { text: '项目简介', link: '/zh/guide/' },
-        { text: '安装方式', link: '/zh/guide/installation' },
-        { text: '快速上手', link: '/zh/guide/getting-started' },
+        { text: '安装', link: '/zh/guide/installation'},
+        { text: '快速上手', link: '/zh/guide/quickstart' },
+        { text: '主题切换', link: '/zh/guide/switch-theme'},
         { text: '国际化', link: '/zh/guide/i18n' },
         { text: '常见问题', link: '/zh/guide/faq' },
         { text: '更新日志', link: '/zh/guide/changelog' },
