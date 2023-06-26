@@ -1,0 +1,15 @@
+:root {
+  /* Component */
+  --bf-hight-small: 24px;
+  --bf-hight-default: 32px;
+  --bf-hight-large: 40px;
+
+  /* Screen */
+  --bf-screen-xs: 400px;
+  --bf-screen-sm: 640px;
+  --bf-screen-md: 768px;
+  --bf-screen-lg: 1024px;
+  --bf-screen-xl: 1280px;
+  --bf-screen-xxl: 1536px;
+  --bf-screen-xxxl: 1920px;
+}

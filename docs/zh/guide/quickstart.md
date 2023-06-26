@@ -77,7 +77,7 @@ yarn add -D unplugin-vue-components unplugin-auto-import
 
 ## 局部注册
 
-以 Button 组件为例，你通过模块化的方式在 Vue 中局部导入：
+以 Button 组件为例，你可以通过模块化的方式在 Vue 中局部导入：
 
 ```vue:line-numbers{10}
 <template>

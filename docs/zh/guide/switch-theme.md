@@ -1,6 +1,6 @@
 # 主题切换
 
-我们使用 CSS 变量，结合 `:root` 选择器匹配文档根元素，通过为 html 标签更换不同的 class 类名来实现主题样式的切换。关于更多设计理念，请见 [Theme 主题](../contribution/design/theme/)。
+我们使用 CSS 变量，结合 `:root` 选择器匹配文档根元素，通过为 html 标签更换不同的 class 类名来实现主题样式的切换。关于 BFUI 的设计理念和规范，请见组件设计的 [Values 价值观](../contribution/design/values/index.md)。
 
 ```js
 // 添加类值

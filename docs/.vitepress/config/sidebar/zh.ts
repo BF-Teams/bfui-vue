@@ -83,10 +83,9 @@ export const sidebarZh: SidebarMulti = {
           items: [
             { text: 'Values 价值观', link: '/zh/contribution/design/values/' },
             { text: 'Color 色彩', link: '/zh/contribution/design/color/' },
-            { text: 'Fonts 字体', link: '/zh/contribution/design/fonts/' },
             { text: 'Layout 布局', link: '/zh/contribution/design/layout/' },
+            { text: 'Fonts 字体', link: '/zh/contribution/design/fonts/' },
             { text: 'Motion 动效', link: '/zh/contribution/design/motion/' },
-            { text: 'Theme 主题', link: '/zh/contribution/design/theme/' },
           ],
         },
         {
